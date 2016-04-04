@@ -1,11 +1,13 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://raw.githubusercontent.com/lonniev/ontologies/v_uml_2.5/omg/uml/uml.owl"
+     xml:base="https://raw.githubusercontent.com/lonniev/ontologies/master/omg/uml/uml.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://raw.githubusercontent.com/lonniev/ontologies/v_uml_2.5/omg/uml/uml.owl">
+     ontologyIRI="https://raw.githubusercontent.com/lonniev/ontologies/master/omg/uml/uml.owl"
+     versionIRI="https://raw.githubusercontent.com/lonniev/ontologies/v_uml_2.5/omg/uml/uml.owl">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -15,7 +17,10 @@
         <Class IRI="#Interaction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Class"/>
+        <Class IRI="#Metaclass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Property"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Enumeration"/>
@@ -24,10 +29,7 @@
         <Class IRI="#Operation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Metaclass"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Message"/>
+        <Class IRI="#Class"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Slot"/>
@@ -36,10 +38,10 @@
         <Class IRI="#Package"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#InstanceSpecification"/>
+        <Class IRI="#Message"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Property"/>
+        <Class IRI="#InstanceSpecification"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Comment"/>

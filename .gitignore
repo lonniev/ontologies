@@ -2,3 +2,5 @@
 *.history
 
 *.vontology
+
+catalog*.xml
