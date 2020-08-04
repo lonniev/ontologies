@@ -1,0 +1,1888 @@
+@prefix : <https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm> .
+
+<https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm> rdf:type owl:Ontology ;
+                                                                        owl:imports <https://raw.githubusercontent.com/lonniev/ontologies/master/omg/uml/uml.owl> .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualPropertySetKind
+:ActualPropertySetKind rdf:type rdfs:Datatype ;
+                       owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                             owl:oneOf [ rdf:type rdf:List ;
+                                                         rdf:first "Actual" ;
+                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                    rdf:first "Estimate" ;
+                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                               rdf:first "Required" ;
+                                                                               rdf:rest rdf:nil
+                                                                             ]
+                                                                  ]
+                                                       ]
+                                           ] .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ArchitectureFrameworkKind
+:ArchitectureFrameworkKind rdf:type rdfs:Datatype ;
+                           owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                                 owl:oneOf [ rdf:type rdf:List ;
+                                                             rdf:first "DoDAF" ;
+                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                        rdf:first "MODAF" ;
+                                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                                   rdf:first "NAF" ;
+                                                                                   rdf:rest rdf:nil
+                                                                                 ]
+                                                                      ]
+                                                           ]
+                                               ] .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#LocationKind
+:LocationKind rdf:type rdfs:Datatype .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#RoleKind
+:RoleKind rdf:type rdfs:Datatype ;
+          owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                owl:oneOf [ rdf:type rdf:List ;
+                                            rdf:first "Component" ;
+                                            rdf:rest [ rdf:type rdf:List ;
+                                                       rdf:first "Equipment" ;
+                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                  rdf:first "Hosted Software" ;
+                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                             rdf:first "Human Resource" ;
+                                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                                        rdf:first "Other" ;
+                                                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                                                   rdf:first "Part" ;
+                                                                                                   rdf:rest [ rdf:type rdf:List ;
+                                                                                                              rdf:first "Platform" ;
+                                                                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                                                                         rdf:first "Post Role" ;
+                                                                                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                    rdf:first "Responsibility Role" ;
+                                                                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                               rdf:first "Service Access Role" ;
+                                                                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                          rdf:first "Sub Organization" ;
+                                                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                     rdf:first "Sub System Part" ;
+                                                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                rdf:first "System" ;
+                                                                                                                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                           rdf:first "Used Configuration" ;
+                                                                                                                                                                                           rdf:rest rdf:nil
+                                                                                                                                                                                         ]
+                                                                                                                                                                              ]
+                                                                                                                                                                   ]
+                                                                                                                                                        ]
+                                                                                                                                             ]
+                                                                                                                                  ]
+                                                                                                                       ]
+                                                                                                            ]
+                                                                                                 ]
+                                                                                      ]
+                                                                           ]
+                                                                ]
+                                                     ]
+                                          ]
+                              ] .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#activityPerformedByPerformer
+:activityPerformedByPerformer rdf:type owl:ObjectProperty ;
+                              rdfs:domain :Performer ;
+                              rdfs:range :OperationalActivity .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ArbitraryConnector
+:ArbitraryConnector rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ArchitecturalReference
+:ArchitecturalReference rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Command
+:Command rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Details
+:Details rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Exhibits
+:Exhibits rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Expose
+:Expose rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#FillsPost
+:FillsPost rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Implements
+:Implements rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#IsCapableOfPerforming
+:IsCapableOfPerforming rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#MapsToCapability
+:MapsToCapability rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ProvidesCompetence
+:ProvidesCompetence rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#RequiresCompetence
+:RequiresCompetence rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Trustline
+:Trustline rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#activityPerformableUnderCondition
+:activityPerformableUnderCondition rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#actsUpon
+:actsUpon rdf:type owl:ObjectProperty ;
+          owl:inverseOf :subject .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#actualPropertySet
+:actualPropertySet rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :appliesTo .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#appliesTo
+:appliesTo rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#carries
+:carries rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#date
+:date rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#describedBy
+:describedBy rdf:type owl:ObjectProperty ;
+             owl:inverseOf :describes .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#describes
+:describes rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#endDate
+:endDate rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#extendedBy
+:extendedBy rdf:type owl:ObjectProperty ;
+            owl:inverseOf :extends .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#extends
+:extends rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#milestone
+:milestone rdf:type owl:ObjectProperty ;
+           owl:inverseOf :resource .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#operation
+:operation rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ownedMilestones
+:ownedMilestones rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#part
+:part rdf:type owl:ObjectProperty ;
+      owl:inverseOf :whole .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#performsInContext
+:performsInContext rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#physicalLocation
+:physicalLocation rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ratifiedBy
+:ratifiedBy rdf:type owl:ObjectProperty ;
+            owl:inverseOf :ratifiedStandards .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ratifiedStandards
+:ratifiedStandards rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#realizedBy
+:realizedBy rdf:type owl:ObjectProperty ;
+            owl:inverseOf :realizes .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#realizes
+:realizes rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#resource
+:resource rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#startDate
+:startDate rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#subject
+:subject rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#viewpoint
+:viewpoint rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#viewpoints
+:viewpoints rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#views
+:views rdf:type owl:ObjectProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#whole
+:whole rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#address
+:address rdf:type owl:DatatypeProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#approvalAuthority
+:approvalAuthority rdf:type owl:DatatypeProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#architect
+:architect rdf:type owl:DatatypeProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#architectureFrameworkKind
+:architectureFrameworkKind rdf:type owl:DatatypeProperty ;
+                           rdfs:range :ArchitectureFrameworkKind .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#assumptionAndConstraint
+:assumptionAndConstraint rdf:type owl:DatatypeProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#code_symbol
+:code_symbol rdf:type owl:DatatypeProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#creatingOrganization
+:creatingOrganization rdf:type owl:DatatypeProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#customKind
+:customKind rdf:type owl:DatatypeProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#dateCompleted
+:dateCompleted rdf:type owl:DatatypeProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#description
+:description rdf:type owl:DatatypeProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#intention
+:intention rdf:type owl:DatatypeProperty ;
+           rdfs:range :ActualPropertySetKind .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#locationKind
+:locationKind rdf:type owl:DatatypeProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#locationNamedByAddress
+:locationNamedByAddress rdf:type owl:DatatypeProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#nameOwner
+:nameOwner rdf:type owl:DatatypeProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#purpose
+:purpose rdf:type owl:DatatypeProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#recommendations
+:recommendations rdf:type owl:DatatypeProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#roleKind
+:roleKind rdf:type owl:DatatypeProperty ;
+          rdfs:range :RoleKind .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#serviceType
+:serviceType rdf:type owl:DatatypeProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#summaryOfFindings
+:summaryOfFindings rdf:type owl:DatatypeProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#toBe
+:toBe rdf:type owl:DatatypeProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#toolsUsed
+:toolsUsed rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Class
+<http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Class> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Comment
+<http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Comment> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification
+<http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Interaction
+<http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Interaction> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Message
+<http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Message> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass
+<http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Operation
+<http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Operation> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Package
+<http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Package> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Property
+<http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Property> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Slot
+<http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Slot> rdf:type owl:Class .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Performer
+:Performer rdf:type owl:Class ;
+           rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Activity
+:Activity rdf:type owl:Class ;
+          rdfs:subClassOf :Desirer ,
+                          :UPDMElement ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :activityPerformableUnderCondition ;
+                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Environment
+                          ] ;
+          rdfs:comment "An abstract element that represents a behavior (i.e., a Function or OperationalActivity) that can be performed by a Performer." ;
+          owl:versionInfo "2.1" .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActivitySubject
+:ActivitySubject rdf:type owl:Class ;
+                 rdfs:subClassOf :UPDMElement ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :actsUpon ;
+                                   owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :OperationalActivity
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :physicalLocation ;
+                                   owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :ActualLocation
+                                 ] ;
+                 rdfs:comment "Anything that is acted upon by an OperationalActivity." ;
+                 owl:versionInfo "2.1" .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualLocation
+:ActualLocation rdf:type owl:Class ;
+                rdfs:subClassOf :UPDMElement ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :extends ;
+                                  owl:someValuesFrom <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :extends ;
+                                  owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                  owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :extends ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :extends ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :locationKind ;
+                                  owl:someValuesFrom :LocationKind
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :address ;
+                                  owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:string
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :customKind ;
+                                  owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:string
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :locationNamedByAddress ;
+                                  owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:boolean
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :address ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:string
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :customKind ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:string
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :locationKind ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange :LocationKind
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :locationNamedByAddress ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:boolean
+                                ] ;
+                rdfs:comment " A PhysicalLocation (MODAF::ActualLocation) is a location anywhere on the earth. The means of describing the location is a string (locationDescription). The information contained in that string is governed by the taxonomy reference (e.g., if the PhysicalLocation is a “GPS reference,” the string will contain the GPS coordinates). NOTE: this has been extended in UPDM to include non-earth locations." ;
+                owl:versionInfo "2.1" .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualMeasurement
+:ActualMeasurement rdf:type owl:Class ;
+                   rdfs:subClassOf :ActualProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualOrganization
+:ActualOrganization rdf:type owl:Class ;
+                    rdfs:subClassOf :ActualOrganizationalResource ,
+                                    :UPDMElement ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :extends ;
+                                      owl:someValuesFrom <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :extends ;
+                                      owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                      owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification>
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :ratifiedStandards ;
+                                      owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :Standard
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :extends ;
+                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification>
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :extends ;
+                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :code_symbol ;
+                                      owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                      owl:onDataRange xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :serviceType ;
+                                      owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                      owl:onDataRange xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :code_symbol ;
+                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onDataRange xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :serviceType ;
+                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onDataRange xsd:string
+                                    ] ;
+                    rdfs:comment "An actual specific organization, an instance of an organization class (e.g., “The US Department of Defense”)." ;
+                    owl:versionInfo "2.1" .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualOrganizationRole
+:ActualOrganizationRole rdf:type owl:Class ;
+                        rdfs:subClassOf :UPDMElement ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :extends ;
+                                          owl:someValuesFrom <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :extends ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Slot>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :extends ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :extends ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Slot>
+                                        ] ;
+                        rdfs:comment "Relates an actual specific organization to an actual specific organizational resource that fulfills a role in that organization" ;
+                        owl:versionInfo "2.1" .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualOrganizationalResource
+:ActualOrganizationalResource rdf:type owl:Class ;
+                              rdfs:subClassOf :LocationHolder .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualPerson
+:ActualPerson rdf:type owl:Class ;
+              rdfs:subClassOf :ActualPost ,
+                              :CompetenceProvider ,
+                              :LocationHolder .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualPost
+:ActualPost rdf:type owl:Class ;
+            rdfs:subClassOf :ActualOrganizationalResource ,
+                            :UPDMElement ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :extends ;
+                              owl:someValuesFrom <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :extends ;
+                              owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                              owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification>
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :extends ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification>
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :extends ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                            ] ;
+            rdfs:comment "An actual, specific post, an instance of a PostType class (e.g., “President of the United States of America”)." ;
+            owl:versionInfo "2.1" .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualProject
+:ActualProject rdf:type owl:Class ;
+               rdfs:subClassOf :UPDMElement ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :extends ;
+                                 owl:someValuesFrom <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :endDate ;
+                                 owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :ISO8601DateTime
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :extends ;
+                                 owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                 owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification>
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :ownedMilestones ;
+                                 owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :ActualProjectMilestone
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :part ;
+                                 owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :ActualProject
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :startDate ;
+                                 owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :ISO8601DateTime
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :whole ;
+                                 owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :ActualProject
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :endDate ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :ISO8601DateTime
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :extends ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification>
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :extends ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :startDate ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :ISO8601DateTime
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :whole ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :ActualProject
+                               ] ;
+               rdfs:comment "A time-limited endeavor to create a specific set of products or services." ;
+               owl:versionInfo "2.1" .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualProjectMilestone
+:ActualProjectMilestone rdf:type owl:Class ;
+                        rdfs:subClassOf :UPDMElement ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :extends ;
+                                          owl:someValuesFrom <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :date ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onClass :ISO8601DateTime
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :extends ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :resource ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onClass :SystemResource
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :date ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass :ISO8601DateTime
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :extends ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :extends ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :description ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :description ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:string
+                                        ] ;
+                        rdfs:comment "An event in a ActualProject (MODAF::Project) by which progress is measured." ;
+                        owl:versionInfo "2.1" .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualProjectMilestoneRole
+:ActualProjectMilestoneRole rdf:type owl:Class ;
+                            rdfs:subClassOf :UPDMElement ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :extends ;
+                                              owl:someValuesFrom <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :extends ;
+                                              owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                              owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Slot>
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :extends ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :extends ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Slot>
+                                            ] ;
+                            rdfs:comment "An instance of a ProjectMilestoneRole in the context of an ActualProject." ;
+                            owl:versionInfo "2.1" .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualProperty
+:ActualProperty rdf:type owl:Class ;
+                rdfs:subClassOf :UPDMElement ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :extends ;
+                                  owl:someValuesFrom <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :endDate ;
+                                  owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :ISO8601DateTime
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :extends ;
+                                  owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                  owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Slot>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :startDate ;
+                                  owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :ISO8601DateTime
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :endDate ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :ISO8601DateTime
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :extends ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :extends ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Slot>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :startDate ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :ISO8601DateTime
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :intention ;
+                                  owl:someValuesFrom :ActualPropertySetKind
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :intention ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange :ActualPropertySetKind
+                                ] ;
+                rdfs:comment "The value of a Measure." ;
+                owl:versionInfo "2.1" .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualPropertySet
+:ActualPropertySet rdf:type owl:Class ;
+                   rdfs:subClassOf :UPDMElement ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :extends ;
+                                     owl:someValuesFrom <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :appliesTo ;
+                                     owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :UPDMElement
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :extends ;
+                                     owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                     owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :appliesTo ;
+                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :UPDMElement
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :extends ;
+                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :extends ;
+                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                                   ] ;
+                   rdfs:comment """A set or collection of ActualMeasurement(s). A date of measurement can be set. An intent of
+ActualMeasurementSet can be “Result,” “Required,” or “Estimate”.""" ;
+                   owl:versionInfo "2.1" .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Alias
+:Alias rdf:type owl:Class ;
+       rdfs:subClassOf :UPDMElement ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :extends ;
+                         owl:someValuesFrom <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :extends ;
+                         owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                         owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Comment>
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :extends ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Comment>
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :extends ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :nameOwner ;
+                         owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:string
+                       ] ;
+       rdfs:comment "A UPDM Artifact used to define an alternative name for an element as used by DoDAF or MODAF." ;
+       owl:versionInfo "2.1" .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ArchitecturalDescription
+:ArchitecturalDescription rdf:type owl:Class ;
+                          rdfs:subClassOf :UPDMElement ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :extends ;
+                                            owl:someValuesFrom <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :describes ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onClass :EnterprisePhase
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :extends ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Package>
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :viewpoint ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onClass :Viewpoint
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :views ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onClass :View
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :describes ;
+                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onClass :EnterprisePhase
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :extends ;
+                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :extends ;
+                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Package>
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :architectureFrameworkKind ;
+                                            owl:someValuesFrom xsd:boolean
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :toBe ;
+                                            owl:someValuesFrom xsd:boolean
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :approvalAuthority ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onDataRange xsd:string
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :architect ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onDataRange xsd:string
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :assumptionAndConstraint ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onDataRange xsd:string
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :creatingOrganization ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onDataRange xsd:string
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :dateCompleted ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onDataRange xsd:string
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :purpose ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onDataRange xsd:string
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :recommendations ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onDataRange xsd:string
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :summaryOfFindings ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onDataRange xsd:string
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :toolsUsed ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onDataRange xsd:string
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :architectureFrameworkKind ;
+                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onDataRange xsd:boolean
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :dateCompleted ;
+                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onDataRange xsd:string
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :toBe ;
+                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onDataRange xsd:boolean
+                                          ] ;
+                          rdfs:comment "A specification of a system of systems at a technical level which also provides the business context for the system of systems." ;
+                          owl:versionInfo "2.1" .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ArchitectureMetadata
+:ArchitectureMetadata rdf:type owl:Class ;
+                      rdfs:subClassOf :Metadata .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#AsynchronousMessage
+:AsynchronousMessage rdf:type owl:Class ;
+                     rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Capability
+:Capability rdf:type owl:Class ;
+            rdfs:subClassOf :Desirer ,
+                            :PropertySet ,
+                            :UPDMElement ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :extends ;
+                              owl:someValuesFrom <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :extends ;
+                              owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                              owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Class>
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :extends ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Class>
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :extends ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                            ] ;
+            rdfs:comment "A high level specification of the enterprise’s ability." ;
+            owl:versionInfo "2.1" .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#CapabilityProperty
+:CapabilityProperty rdf:type owl:Class ;
+                    rdfs:subClassOf :Property .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#CapableElement
+:CapableElement rdf:type owl:Class ;
+                rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Climate
+:Climate rdf:type owl:Class ;
+         rdfs:subClassOf :Environment .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Command
+:Command rdf:type owl:Class ;
+         rdfs:subClassOf :ResourceInteraction .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Competence
+:Competence rdf:type owl:Class ;
+            rdfs:subClassOf :PropertySet ,
+                            :SubjectOfForecast .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#CompetenceProvider
+:CompetenceProvider rdf:type owl:Class ;
+                    rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#CompetenceRequirer
+:CompetenceRequirer rdf:type owl:Class ;
+                    rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ConceptItem
+:ConceptItem rdf:type owl:Class ;
+             rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ConceptRole
+:ConceptRole rdf:type owl:Class ;
+             rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ConditionType
+:ConditionType rdf:type owl:Class ;
+               rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#DataModel
+:DataModel rdf:type owl:Class ;
+           rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Definition
+:Definition rdf:type owl:Class ;
+            rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#DeployedMilestone
+:DeployedMilestone rdf:type owl:Class ;
+                   rdfs:subClassOf :ActualProjectMilestone ,
+                                   :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#DesiredEffect
+:DesiredEffect rdf:type owl:Class ;
+               rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#DesiredState
+:DesiredState rdf:type owl:Class ;
+              rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Desirer
+:Desirer rdf:type owl:Class ;
+         rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#EnduringTask
+:EnduringTask rdf:type owl:Class ;
+              rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Energy
+:Energy rdf:type owl:Class ;
+        rdfs:subClassOf :OperationalExchangeItem .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#EnterpriseGoal
+:EnterpriseGoal rdf:type owl:Class ;
+                rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#EnterprisePhase
+:EnterprisePhase rdf:type owl:Class ;
+                 rdfs:subClassOf :CapableElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#EnterpriseVision
+:EnterpriseVision rdf:type owl:Class ;
+                  rdfs:subClassOf :Desirer .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#EntityItem
+:EntityItem rdf:type owl:Class ;
+            rdfs:subClassOf :ExchangeElement ,
+                            :SubjectOfOperationalConstraint .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Environment
+:Environment rdf:type owl:Class ;
+             rdfs:subClassOf :ConditionType ,
+                             :PropertySet .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#EnvironmentProperty
+:EnvironmentProperty rdf:type owl:Class ;
+                     rdfs:subClassOf :Property ,
+                                     :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Exchange
+:Exchange rdf:type owl:Class ;
+          rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ExchangeElement
+:ExchangeElement rdf:type owl:Class ;
+                 rdfs:subClassOf :OperationalExchangeItem ,
+                                 :ResourceInteractionItem ,
+                                 :SubjectOfOperationalConstraint ,
+                                 :SubjectOfResourceConstraint .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ExchangeElementKind
+:ExchangeElementKind rdf:type owl:Class ;
+                     rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Function
+:Function rdf:type owl:Class ;
+          rdfs:subClassOf :Activity ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :realizedBy ;
+                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                            owl:onClass :ResourceOperation
+                          ] .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#FunctionAction
+:FunctionAction rdf:type owl:Class ;
+                rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#GeoPoliticalExtentType
+:GeoPoliticalExtentType rdf:type owl:Class ;
+                        rdfs:subClassOf :OperationalExchangeItem .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#HighLevelOperationalConcept
+:HighLevelOperationalConcept rdf:type owl:Class ;
+                             rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ISO8601DateTime
+:ISO8601DateTime rdf:type owl:Class ;
+                 rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#IncrementMilestone
+:IncrementMilestone rdf:type owl:Class ;
+                    rdfs:subClassOf :ActualProjectMilestone .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Information
+:Information rdf:type owl:Class ;
+             rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#KnownResource
+:KnownResource rdf:type owl:Class ;
+               rdfs:subClassOf :NodeRole .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#LightCondition
+:LightCondition rdf:type owl:Class ;
+                rdfs:subClassOf :Environment .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Location
+:Location rdf:type owl:Class ;
+          rdfs:subClassOf :ActualLocation .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#LocationHolder
+:LocationHolder rdf:type owl:Class ;
+                rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#LocationType
+:LocationType rdf:type owl:Class ;
+              rdfs:subClassOf :ConceptItem ,
+                              :ConditionType .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#LocationTypeKind
+:LocationTypeKind rdf:type owl:Class ;
+                  rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#LogicalArchitecture
+:LogicalArchitecture rdf:type owl:Class ;
+                     rdfs:subClassOf :NodeParent .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#LogicalDataModel
+:LogicalDataModel rdf:type owl:Class ;
+                  rdfs:subClassOf :DataModel .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Measurement
+:Measurement rdf:type owl:Class ;
+             rdfs:subClassOf :Property ,
+                             :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#MeasurementSet
+:MeasurementSet rdf:type owl:Class ;
+                rdfs:subClassOf :PropertySet ,
+                                :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Metadata
+:Metadata rdf:type owl:Class ;
+          rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Mission
+:Mission rdf:type owl:Class ;
+         rdfs:subClassOf :SubjectOfOperationalConstraint ,
+                         :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#NeedLine
+:NeedLine rdf:type owl:Class ;
+          rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#NoLongerUsedMilestone
+:NoLongerUsedMilestone rdf:type owl:Class ;
+                       rdfs:subClassOf :ActualProjectMilestone ,
+                                       :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Node
+:Node rdf:type owl:Class ;
+      rdfs:subClassOf :ActivitySubject ,
+                      :SubjectOfOperationalConstraint ,
+                      :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#NodeOperation
+:NodeOperation rdf:type owl:Class ;
+               rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#NodeParent
+:NodeParent rdf:type owl:Class ;
+            rdfs:subClassOf :Participant .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#NodePort
+:NodePort rdf:type owl:Class ;
+          rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#NodeRole
+:NodeRole rdf:type owl:Class ;
+          rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalActivity
+:OperationalActivity rdf:type owl:Class ;
+                     rdfs:subClassOf :Activity ,
+                                     :SubjectOfOperationalConstraint .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalActivityAction
+:OperationalActivityAction rdf:type owl:Class ;
+                           rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalActivityEdge
+:OperationalActivityEdge rdf:type owl:Class ;
+                         rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalConstraint
+:OperationalConstraint rdf:type owl:Class ;
+                       rdfs:subClassOf :Rule .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalEventTrace
+:OperationalEventTrace rdf:type owl:Class ;
+                       rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalExchange
+:OperationalExchange rdf:type owl:Class ;
+                     rdfs:subClassOf :Exchange ,
+                                     :SubjectOfOperationalConstraint .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalExchangeItem
+:OperationalExchangeItem rdf:type owl:Class ;
+                         rdfs:subClassOf :ActivitySubject ,
+                                         :Resource ,
+                                         :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalExchangeKind
+:OperationalExchangeKind rdf:type owl:Class ;
+                         rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalMessage
+:OperationalMessage rdf:type owl:Class ;
+                    rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalParameter
+:OperationalParameter rdf:type owl:Class ;
+                      rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalState
+:OperationalState rdf:type owl:Class ;
+                  rdfs:subClassOf :DesiredState ,
+                                  :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalStateDescription
+:OperationalStateDescription rdf:type owl:Class ;
+                             rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Organization
+:Organization rdf:type owl:Class ;
+              rdfs:subClassOf :OrganizationalResource ,
+                              :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OrganizationalProjectRelationship
+:OrganizationalProjectRelationship rdf:type owl:Class ;
+                                   rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OrganizationalResource
+:OrganizationalResource rdf:type owl:Class ;
+                        rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OutOfServiceMilestone
+:OutOfServiceMilestone rdf:type owl:Class ;
+                       rdfs:subClassOf :ActualProjectMilestone .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Overlap
+:Overlap rdf:type owl:Class ;
+         rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OwnsProcess
+:OwnsProcess rdf:type owl:Class ;
+             rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Participant
+:Participant rdf:type owl:Class ;
+             rdfs:subClassOf :CapableElement ,
+                             :ConceptItem ,
+                             :Desirer ,
+                             :OperationalExchangeItem .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf :ActualOrganization .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Post
+:Post rdf:type owl:Class ;
+      rdfs:subClassOf :CompetenceRequirer ,
+                      :OrganizationalResource .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ProblemDomain
+:ProblemDomain rdf:type owl:Class ;
+               rdfs:subClassOf :NodeRole ,
+                               :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ProjectActivity
+:ProjectActivity rdf:type owl:Class ;
+                 rdfs:subClassOf :Activity .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ProjectMilestone
+:ProjectMilestone rdf:type owl:Class ;
+                  rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ProjectMilestoneRole
+:ProjectMilestoneRole rdf:type owl:Class ;
+                      rdfs:subClassOf :UPDMElement ;
+                      rdfs:comment "An instance of a ProjectMilestoneRole in the context of an ActualProject." ;
+                      owl:versionInfo 2.1 .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ProjectOwnership
+:ProjectOwnership rdf:type owl:Class ;
+                  rdfs:subClassOf :OrganizationalProjectRelationship .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ProjectSequence
+:ProjectSequence rdf:type owl:Class ;
+                 rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ProjectStatus
+:ProjectStatus rdf:type owl:Class ;
+               rdfs:subClassOf :ActualProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ProjectType
+:ProjectType rdf:type owl:Class ;
+             rdfs:subClassOf :Desirer ,
+                             :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Property
+:Property rdf:type owl:Class ;
+          rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#PropertySet
+:PropertySet rdf:type owl:Class ;
+             rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Request
+:Request rdf:type owl:Class ;
+         rdfs:subClassOf :ServicePort ,
+                         :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Resource
+:Resource rdf:type owl:Class ;
+          rdfs:subClassOf :LocationHolder ,
+                          :PropertySet .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ResourceConstraint
+:ResourceConstraint rdf:type owl:Class ;
+                    rdfs:subClassOf :Rule .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ResourceEventTrace
+:ResourceEventTrace rdf:type owl:Class ;
+                    rdfs:subClassOf :UPDMElement ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :extends ;
+                                      owl:someValuesFrom <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :extends ;
+                                      owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                      owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Interaction>
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :extends ;
+                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Interaction>
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :extends ;
+                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                                    ] ;
+                    rdfs:comment "A UPDM artifact that extends a UML Interaction. " ;
+                    owl:versionInfo "2.1" .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ResourceInteraction
+:ResourceInteraction rdf:type owl:Class ;
+                     rdfs:subClassOf :Exchange .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ResourceInteractionItem
+:ResourceInteractionItem rdf:type owl:Class ;
+                         rdfs:subClassOf :Resource ,
+                                         :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ResourceMessage
+:ResourceMessage rdf:type owl:Class ;
+                 rdfs:subClassOf :UPDMElement ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :extends ;
+                                   owl:someValuesFrom <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :carries ;
+                                   owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :ResourceInteraction
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :extends ;
+                                   owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                   owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Message>
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :operation ;
+                                   owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :ResourceOperation
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :extends ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Message>
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :extends ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :operation ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :ResourceOperation
+                                 ] ;
+                 rdfs:comment "Message for use in a Resource EventTrace implements a ResourceInteraction." ;
+                 owl:versionInfo "2.1" .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ResourceOperation
+:ResourceOperation rdf:type owl:Class ;
+                   rdfs:subClassOf :UPDMElement ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :extends ;
+                                     owl:someValuesFrom <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :extends ;
+                                     owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                     owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Operation>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :realizes ;
+                                     owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :Function
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :extends ;
+                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :extends ;
+                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Operation>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :realizes ;
+                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :Function
+                                   ] ;
+                   rdfs:comment "A partial or full realization of Function." ;
+                   owl:versionInfo "2.1" .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ResourceParameter
+:ResourceParameter rdf:type owl:Class ;
+                   rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ResourceRole
+:ResourceRole rdf:type owl:Class ;
+              rdfs:subClassOf :UPDMElement ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :extends ;
+                                owl:someValuesFrom <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :extends ;
+                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Property>
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :performsInContext ;
+                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onClass :Function
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :extends ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass>
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :extends ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass <http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Property>
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :roleKind ;
+                                owl:someValuesFrom :RoleKind
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :roleKind ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange :RoleKind
+                              ] ;
+              rdfs:comment "abstract element." ;
+              owl:versionInfo "2.1" .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ResourceState
+:ResourceState rdf:type owl:Class ;
+               rdfs:subClassOf :DesiredState .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Responsibility
+:Responsibility rdf:type owl:Class ;
+                rdfs:subClassOf :CompetenceRequirer ,
+                                :OrganizationalResource .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Rule
+:Rule rdf:type owl:Class ;
+      rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#RuleKind
+:RuleKind rdf:type owl:Class ;
+          rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#SameAs
+:SameAs rdf:type owl:Class ;
+        rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#SecurityAttributesGroup
+:SecurityAttributesGroup rdf:type owl:Class ;
+                         rdfs:subClassOf :PropertySet .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#SecurityDomain
+:SecurityDomain rdf:type owl:Class ;
+                rdfs:subClassOf :Node .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceAttribute
+:ServiceAttribute rdf:type owl:Class ;
+                  rdfs:subClassOf :Property .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceChannel
+:ServiceChannel rdf:type owl:Class ;
+                rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceDescription
+:ServiceDescription rdf:type owl:Class ;
+                    rdfs:subClassOf :ArchitecturalDescription .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceFeature
+:ServiceFeature rdf:type owl:Class ;
+                rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceFunction
+:ServiceFunction rdf:type owl:Class ;
+                 rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceFunctionAction
+:ServiceFunctionAction rdf:type owl:Class ;
+                       rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceFunctionEdge
+:ServiceFunctionEdge rdf:type owl:Class ;
+                     rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceInterface
+:ServiceInterface rdf:type owl:Class ;
+                  rdfs:subClassOf :PropertySet ,
+                                  :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceLevelValue
+:ServiceLevelValue rdf:type owl:Class ;
+                   rdfs:subClassOf :ActualProperty .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceLevelValueSet
+:ServiceLevelValueSet rdf:type owl:Class ;
+                      rdfs:subClassOf :ActualPropertySet .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceMessage
+:ServiceMessage rdf:type owl:Class ;
+                rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceMessageHandler
+:ServiceMessageHandler rdf:type owl:Class ;
+                       rdfs:subClassOf :ServiceFeature .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceOperation
+:ServiceOperation rdf:type owl:Class ;
+                  rdfs:subClassOf :ServiceFeature .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServicePolicy
+:ServicePolicy rdf:type owl:Class ;
+               rdfs:subClassOf :Rule .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServicePort
+:ServicePort rdf:type owl:Class ;
+             rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceStateMachine
+:ServiceStateMachine rdf:type owl:Class ;
+                     rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Standard
+:Standard rdf:type owl:Class ;
+          rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#StandardOperationalActivity
+:StandardOperationalActivity rdf:type owl:Class ;
+                             rdfs:subClassOf :OperationalActivity .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#StereotypeExtension
+:StereotypeExtension rdf:type owl:Class ;
+                     rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#StructuralPart
+:StructuralPart rdf:type owl:Class ;
+                rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#SubjectOfForecast
+:SubjectOfForecast rdf:type owl:Class ;
+                   rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#SubjectOfOperationalConstraint
+:SubjectOfOperationalConstraint rdf:type owl:Class ;
+                                rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#SubjectOfOperationalStateMachine
+:SubjectOfOperationalStateMachine rdf:type owl:Class ;
+                                  rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#SubjectOfResourceConstraint
+:SubjectOfResourceConstraint rdf:type owl:Class ;
+                             rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#SysML_Requirement
+:SysML_Requirement rdf:type owl:Class .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#SysML_View
+:SysML_View rdf:type owl:Class .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#SystemResource
+:SystemResource rdf:type owl:Class ;
+                rdfs:subClassOf :OperationalExchangeItem ,
+                                :Participant ,
+                                :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#TemporalPart
+:TemporalPart rdf:type owl:Class ;
+              rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#UPDMElement
+:UPDMElement rdf:type owl:Class ;
+             rdfs:comment "A relationship between an ActualOrganisation and a Project." ;
+             owl:versionInfo 2.1 .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#View
+:View rdf:type owl:Class ;
+      rdfs:subClassOf :SysML_View ,
+                      :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Viewpoint
+:Viewpoint rdf:type owl:Class ;
+           rdfs:subClassOf :UPDMElement .
+
+
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#VisionStatement
+:VisionStatement rdf:type owl:Class ;
+                 rdfs:subClassOf :UPDMElement .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
