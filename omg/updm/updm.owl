@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm"
+     xml:base="https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm">
-    <Prefix name="" IRI="https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#"/>
+     ontologyIRI="https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#">
+    <Prefix name="" IRI="https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -44,2595 +44,2595 @@
         <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Slot"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Performer"/>
+        <Class IRI="Activity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Activity"/>
+        <Class IRI="ActivitySubject"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ActivitySubject"/>
+        <Class IRI="ActualLocation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ActualLocation"/>
+        <Class IRI="ActualMeasurement"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ActualMeasurement"/>
+        <Class IRI="ActualOrganization"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ActualOrganization"/>
+        <Class IRI="ActualOrganizationRole"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ActualOrganizationRole"/>
+        <Class IRI="ActualOrganizationalResource"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ActualOrganizationalResource"/>
+        <Class IRI="ActualPerson"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ActualPerson"/>
+        <Class IRI="ActualPost"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ActualPost"/>
+        <Class IRI="ActualProject"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ActualProject"/>
+        <Class IRI="ActualProjectMilestone"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ActualProjectMilestone"/>
+        <Class IRI="ActualProjectMilestoneRole"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ActualProjectMilestoneRole"/>
+        <Class IRI="ActualProperty"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ActualProperty"/>
+        <Class IRI="ActualPropertySet"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ActualPropertySet"/>
+        <Class IRI="Alias"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Alias"/>
+        <Class IRI="ArchitecturalDescription"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitectureMetadata"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ArchitectureMetadata"/>
+        <Class IRI="AsynchronousMessage"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#AsynchronousMessage"/>
+        <Class IRI="Capability"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Capability"/>
+        <Class IRI="CapabilityProperty"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#CapabilityProperty"/>
+        <Class IRI="CapableElement"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#CapableElement"/>
+        <Class IRI="Climate"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Climate"/>
+        <Class IRI="Command"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Command"/>
+        <Class IRI="Competence"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Competence"/>
+        <Class IRI="CompetenceProvider"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#CompetenceProvider"/>
+        <Class IRI="CompetenceRequirer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#CompetenceRequirer"/>
+        <Class IRI="ConceptItem"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ConceptItem"/>
+        <Class IRI="ConceptRole"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ConceptRole"/>
+        <Class IRI="ConditionType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ConditionType"/>
+        <Class IRI="DataModel"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#DataModel"/>
+        <Class IRI="Definition"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Definition"/>
+        <Class IRI="DeployedMilestone"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#DeployedMilestone"/>
+        <Class IRI="DesiredEffect"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#DesiredEffect"/>
+        <Class IRI="DesiredState"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#DesiredState"/>
+        <Class IRI="Desirer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Desirer"/>
+        <Class IRI="EnduringTask"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#EnduringTask"/>
+        <Class IRI="Energy"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Energy"/>
+        <Class IRI="EnterpriseGoal"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#EnterpriseGoal"/>
+        <Class IRI="EnterprisePhase"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#EnterprisePhase"/>
+        <Class IRI="EnterpriseVision"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#EnterpriseVision"/>
+        <Class IRI="EntityItem"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#EntityItem"/>
+        <Class IRI="Environment"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Environment"/>
+        <Class IRI="EnvironmentProperty"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#EnvironmentProperty"/>
+        <Class IRI="Exchange"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Exchange"/>
+        <Class IRI="ExchangeElement"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ExchangeElement"/>
+        <Class IRI="ExchangeElementKind"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ExchangeElementKind"/>
+        <Class IRI="Function"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Function"/>
+        <Class IRI="FunctionAction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#FunctionAction"/>
+        <Class IRI="GeoPoliticalExtentType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#GeoPoliticalExtentType"/>
+        <Class IRI="HighLevelOperationalConcept"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#HighLevelOperationalConcept"/>
+        <Class IRI="ISO8601DateTime"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ISO8601DateTime"/>
+        <Class IRI="IncrementMilestone"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#IncrementMilestone"/>
+        <Class IRI="Information"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Information"/>
+        <Class IRI="KnownResource"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#KnownResource"/>
+        <Class IRI="LightCondition"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#LightCondition"/>
+        <Class IRI="Location"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Location"/>
+        <Class IRI="LocationHolder"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#LocationHolder"/>
+        <Class IRI="LocationType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#LocationType"/>
+        <Class IRI="LocationTypeKind"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#LocationTypeKind"/>
+        <Class IRI="LogicalArchitecture"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#LogicalArchitecture"/>
+        <Class IRI="LogicalDataModel"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#LogicalDataModel"/>
+        <Class IRI="Measurement"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Measurement"/>
+        <Class IRI="MeasurementSet"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#MeasurementSet"/>
+        <Class IRI="Metadata"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Metadata"/>
+        <Class IRI="Mission"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Mission"/>
+        <Class IRI="NeedLine"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#NeedLine"/>
+        <Class IRI="NoLongerUsedMilestone"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#NoLongerUsedMilestone"/>
+        <Class IRI="Node"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Node"/>
+        <Class IRI="NodeOperation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#NodeOperation"/>
+        <Class IRI="NodeParent"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#NodeParent"/>
+        <Class IRI="NodePort"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#NodePort"/>
+        <Class IRI="NodeRole"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#NodeRole"/>
+        <Class IRI="OperationalActivity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#OperationalActivity"/>
+        <Class IRI="OperationalActivityAction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#OperationalActivityAction"/>
+        <Class IRI="OperationalActivityEdge"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#OperationalActivityEdge"/>
+        <Class IRI="OperationalConstraint"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#OperationalConstraint"/>
+        <Class IRI="OperationalEventTrace"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#OperationalEventTrace"/>
+        <Class IRI="OperationalExchange"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#OperationalExchange"/>
+        <Class IRI="OperationalExchangeItem"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#OperationalExchangeItem"/>
+        <Class IRI="OperationalExchangeKind"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#OperationalExchangeKind"/>
+        <Class IRI="OperationalMessage"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#OperationalMessage"/>
+        <Class IRI="OperationalParameter"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#OperationalParameter"/>
+        <Class IRI="OperationalState"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#OperationalState"/>
+        <Class IRI="OperationalStateDescription"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#OperationalStateDescription"/>
+        <Class IRI="Organization"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Organization"/>
+        <Class IRI="OrganizationalProjectRelationship"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#OrganizationalProjectRelationship"/>
+        <Class IRI="OrganizationalResource"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#OrganizationalResource"/>
+        <Class IRI="OutOfServiceMilestone"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#OutOfServiceMilestone"/>
+        <Class IRI="Overlap"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Overlap"/>
+        <Class IRI="OwnsProcess"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#OwnsProcess"/>
+        <Class IRI="Participant"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Participant"/>
+        <Class IRI="Performer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Person"/>
+        <Class IRI="Person"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Post"/>
+        <Class IRI="Post"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ProblemDomain"/>
+        <Class IRI="ProblemDomain"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ProjectActivity"/>
+        <Class IRI="ProjectActivity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ProjectMilestone"/>
+        <Class IRI="ProjectMilestone"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ProjectMilestoneRole"/>
+        <Class IRI="ProjectMilestoneRole"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ProjectOwnership"/>
+        <Class IRI="ProjectOwnership"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ProjectSequence"/>
+        <Class IRI="ProjectSequence"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ProjectStatus"/>
+        <Class IRI="ProjectStatus"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ProjectType"/>
+        <Class IRI="ProjectType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Property"/>
+        <Class IRI="Property"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#PropertySet"/>
+        <Class IRI="PropertySet"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Request"/>
+        <Class IRI="Request"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Resource"/>
+        <Class IRI="Resource"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ResourceConstraint"/>
+        <Class IRI="ResourceConstraint"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ResourceEventTrace"/>
+        <Class IRI="ResourceEventTrace"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ResourceInteraction"/>
+        <Class IRI="ResourceInteraction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ResourceInteractionItem"/>
+        <Class IRI="ResourceInteractionItem"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ResourceMessage"/>
+        <Class IRI="ResourceMessage"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ResourceOperation"/>
+        <Class IRI="ResourceOperation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ResourceParameter"/>
+        <Class IRI="ResourceParameter"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ResourceRole"/>
+        <Class IRI="ResourceRole"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ResourceState"/>
+        <Class IRI="ResourceState"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Responsibility"/>
+        <Class IRI="Responsibility"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Rule"/>
+        <Class IRI="Rule"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#RuleKind"/>
+        <Class IRI="RuleKind"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#SameAs"/>
+        <Class IRI="SameAs"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#SecurityAttributesGroup"/>
+        <Class IRI="SecurityAttributesGroup"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#SecurityDomain"/>
+        <Class IRI="SecurityDomain"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ServiceAttribute"/>
+        <Class IRI="ServiceAttribute"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ServiceChannel"/>
+        <Class IRI="ServiceChannel"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ServiceDescription"/>
+        <Class IRI="ServiceDescription"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ServiceFeature"/>
+        <Class IRI="ServiceFeature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ServiceFunction"/>
+        <Class IRI="ServiceFunction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ServiceFunctionAction"/>
+        <Class IRI="ServiceFunctionAction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ServiceFunctionEdge"/>
+        <Class IRI="ServiceFunctionEdge"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ServiceInterface"/>
+        <Class IRI="ServiceInterface"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ServiceLevelValue"/>
+        <Class IRI="ServiceLevelValue"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ServiceLevelValueSet"/>
+        <Class IRI="ServiceLevelValueSet"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ServiceMessage"/>
+        <Class IRI="ServiceMessage"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ServiceMessageHandler"/>
+        <Class IRI="ServiceMessageHandler"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ServiceOperation"/>
+        <Class IRI="ServiceOperation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ServicePolicy"/>
+        <Class IRI="ServicePolicy"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ServicePort"/>
+        <Class IRI="ServicePort"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#ServiceStateMachine"/>
+        <Class IRI="ServiceStateMachine"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Standard"/>
+        <Class IRI="Standard"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#StandardOperationalActivity"/>
+        <Class IRI="StandardOperationalActivity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#StereotypeExtension"/>
+        <Class IRI="StereotypeExtension"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#StructuralPart"/>
+        <Class IRI="StructuralPart"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#SubjectOfForecast"/>
+        <Class IRI="SubjectOfForecast"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#SubjectOfOperationalConstraint"/>
+        <Class IRI="SubjectOfOperationalConstraint"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#SubjectOfOperationalStateMachine"/>
+        <Class IRI="SubjectOfOperationalStateMachine"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#SubjectOfResourceConstraint"/>
+        <Class IRI="SubjectOfResourceConstraint"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#SysML_Requirement"/>
+        <Class IRI="SysML_Requirement"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#SysML_View"/>
+        <Class IRI="SysML_View"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#SystemResource"/>
+        <Class IRI="SystemResource"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#TemporalPart"/>
+        <Class IRI="TemporalPart"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="UPDMElement"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#View"/>
+        <Class IRI="View"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#Viewpoint"/>
+        <Class IRI="Viewpoint"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/updm.owl#VisionStatement"/>
+        <Class IRI="VisionStatement"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#activityPerformedByPerformer"/>
+        <ObjectProperty IRI="ArbitraryConnector"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#ArbitraryConnector"/>
+        <ObjectProperty IRI="ArchitecturalReference"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#ArchitecturalReference"/>
+        <ObjectProperty IRI="Command"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#Command"/>
+        <ObjectProperty IRI="Details"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#Details"/>
+        <ObjectProperty IRI="Exhibits"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#Exhibits"/>
+        <ObjectProperty IRI="Expose"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#Expose"/>
+        <ObjectProperty IRI="FillsPost"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#FillsPost"/>
+        <ObjectProperty IRI="Implements"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#Implements"/>
+        <ObjectProperty IRI="IsCapableOfPerforming"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#IsCapableOfPerforming"/>
+        <ObjectProperty IRI="MapsToCapability"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#MapsToCapability"/>
+        <ObjectProperty IRI="ProvidesCompetence"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#ProvidesCompetence"/>
+        <ObjectProperty IRI="RequiresCompetence"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#RequiresCompetence"/>
+        <ObjectProperty IRI="Trustline"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#Trustline"/>
+        <ObjectProperty IRI="activityPerformableUnderCondition"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#activityPerformableUnderCondition"/>
+        <ObjectProperty IRI="activityPerformedByPerformer"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#actsUpon"/>
+        <ObjectProperty IRI="actsUpon"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#actualPropertySet"/>
+        <ObjectProperty IRI="actualPropertySet"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#appliesTo"/>
+        <ObjectProperty IRI="appliesTo"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#carries"/>
+        <ObjectProperty IRI="carries"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#date"/>
+        <ObjectProperty IRI="date"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#describedBy"/>
+        <ObjectProperty IRI="describedBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#describes"/>
+        <ObjectProperty IRI="describes"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#endDate"/>
+        <ObjectProperty IRI="endDate"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#extendedBy"/>
+        <ObjectProperty IRI="extendedBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#extends"/>
+        <ObjectProperty IRI="extends"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#milestone"/>
+        <ObjectProperty IRI="milestone"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#operation"/>
+        <ObjectProperty IRI="operation"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#ownedMilestones"/>
+        <ObjectProperty IRI="ownedMilestones"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#part"/>
+        <ObjectProperty IRI="part"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#performsInContext"/>
+        <ObjectProperty IRI="performsInContext"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#physicalLocation"/>
+        <ObjectProperty IRI="physicalLocation"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#ratifiedBy"/>
+        <ObjectProperty IRI="ratifiedBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#ratifiedStandards"/>
+        <ObjectProperty IRI="ratifiedStandards"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#realizedBy"/>
+        <ObjectProperty IRI="realizedBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#realizes"/>
+        <ObjectProperty IRI="realizes"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#resource"/>
+        <ObjectProperty IRI="resource"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#startDate"/>
+        <ObjectProperty IRI="startDate"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#subject"/>
+        <ObjectProperty IRI="subject"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#viewpoint"/>
+        <ObjectProperty IRI="viewpoint"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#viewpoints"/>
+        <ObjectProperty IRI="viewpoints"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#views"/>
+        <ObjectProperty IRI="views"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/updm.owl#whole"/>
+        <ObjectProperty IRI="whole"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/updm.owl#address"/>
+        <DataProperty IRI="address"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/updm.owl#approvalAuthority"/>
+        <DataProperty IRI="approvalAuthority"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/updm.owl#architect"/>
+        <DataProperty IRI="architect"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/updm.owl#architectureFrameworkKind"/>
+        <DataProperty IRI="architectureFrameworkKind"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/updm.owl#assumptionAndConstraint"/>
+        <DataProperty IRI="assumptionAndConstraint"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/updm.owl#code_symbol"/>
+        <DataProperty IRI="code_symbol"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/updm.owl#creatingOrganization"/>
+        <DataProperty IRI="creatingOrganization"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/updm.owl#customKind"/>
+        <DataProperty IRI="customKind"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/updm.owl#dateCompleted"/>
+        <DataProperty IRI="dateCompleted"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/updm.owl#description"/>
+        <DataProperty IRI="description"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/updm.owl#intention"/>
+        <DataProperty IRI="intention"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/updm.owl#locationKind"/>
+        <DataProperty IRI="locationKind"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/updm.owl#locationNamedByAddress"/>
+        <DataProperty IRI="locationNamedByAddress"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/updm.owl#nameOwner"/>
+        <DataProperty IRI="nameOwner"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/updm.owl#purpose"/>
+        <DataProperty IRI="purpose"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/updm.owl#recommendations"/>
+        <DataProperty IRI="recommendations"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/updm.owl#roleKind"/>
+        <DataProperty IRI="roleKind"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/updm.owl#serviceType"/>
+        <DataProperty IRI="serviceType"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/updm.owl#summaryOfFindings"/>
+        <DataProperty IRI="summaryOfFindings"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/updm.owl#toBe"/>
+        <DataProperty IRI="toBe"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/updm.owl#toolsUsed"/>
+        <DataProperty IRI="toolsUsed"/>
     </Declaration>
     <Declaration>
-        <Datatype IRI="/updm.owl#ActualPropertySetKind"/>
+        <Datatype IRI="ActualPropertySetKind"/>
     </Declaration>
     <Declaration>
-        <Datatype IRI="/updm.owl#ArchitectureFrameworkKind"/>
+        <Datatype IRI="ArchitectureFrameworkKind"/>
     </Declaration>
     <Declaration>
-        <Datatype IRI="/updm.owl#LocationKind"/>
+        <Datatype IRI="LocationKind"/>
     </Declaration>
     <Declaration>
-        <Datatype IRI="/updm.owl#RoleKind"/>
+        <Datatype IRI="RoleKind"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#Performer"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="Activity"/>
+        <Class IRI="Desirer"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Activity"/>
-        <Class IRI="/updm.owl#Desirer"/>
+        <Class IRI="Activity"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Activity"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/updm.owl#Activity"/>
+        <Class IRI="Activity"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#activityPerformableUnderCondition"/>
-            <Class IRI="/updm.owl#Environment"/>
+            <ObjectProperty IRI="activityPerformableUnderCondition"/>
+            <Class IRI="Environment"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActivitySubject"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ActivitySubject"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActivitySubject"/>
+        <Class IRI="ActivitySubject"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#actsUpon"/>
-            <Class IRI="/updm.owl#OperationalActivity"/>
+            <ObjectProperty IRI="actsUpon"/>
+            <Class IRI="OperationalActivity"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActivitySubject"/>
+        <Class IRI="ActivitySubject"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#physicalLocation"/>
-            <Class IRI="/updm.owl#ActualLocation"/>
+            <ObjectProperty IRI="physicalLocation"/>
+            <Class IRI="ActualLocation"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualLocation"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ActualLocation"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualLocation"/>
+        <Class IRI="ActualLocation"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualLocation"/>
+        <Class IRI="ActualLocation"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualLocation"/>
+        <Class IRI="ActualLocation"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualLocation"/>
+        <Class IRI="ActualLocation"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualLocation"/>
+        <Class IRI="ActualLocation"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="/updm.owl#locationKind"/>
-            <Datatype IRI="/updm.owl#LocationKind"/>
+            <DataProperty IRI="locationKind"/>
+            <Datatype IRI="LocationKind"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualLocation"/>
+        <Class IRI="ActualLocation"/>
         <DataMinCardinality cardinality="0">
-            <DataProperty IRI="/updm.owl#address"/>
+            <DataProperty IRI="address"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualLocation"/>
+        <Class IRI="ActualLocation"/>
         <DataMinCardinality cardinality="0">
-            <DataProperty IRI="/updm.owl#customKind"/>
+            <DataProperty IRI="customKind"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualLocation"/>
+        <Class IRI="ActualLocation"/>
         <DataMinCardinality cardinality="0">
-            <DataProperty IRI="/updm.owl#locationNamedByAddress"/>
+            <DataProperty IRI="locationNamedByAddress"/>
             <Datatype abbreviatedIRI="xsd:boolean"/>
         </DataMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualLocation"/>
+        <Class IRI="ActualLocation"/>
         <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="/updm.owl#address"/>
+            <DataProperty IRI="address"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualLocation"/>
+        <Class IRI="ActualLocation"/>
         <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="/updm.owl#customKind"/>
+            <DataProperty IRI="customKind"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualLocation"/>
+        <Class IRI="ActualLocation"/>
         <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="/updm.owl#locationKind"/>
-            <Datatype IRI="/updm.owl#LocationKind"/>
+            <DataProperty IRI="locationKind"/>
+            <Datatype IRI="LocationKind"/>
         </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualLocation"/>
+        <Class IRI="ActualLocation"/>
         <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="/updm.owl#locationNamedByAddress"/>
+            <DataProperty IRI="locationNamedByAddress"/>
             <Datatype abbreviatedIRI="xsd:boolean"/>
         </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualMeasurement"/>
-        <Class IRI="/updm.owl#ActualProperty"/>
+        <Class IRI="ActualMeasurement"/>
+        <Class IRI="ActualProperty"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualOrganization"/>
-        <Class IRI="/updm.owl#ActualOrganizationalResource"/>
+        <Class IRI="ActualOrganization"/>
+        <Class IRI="ActualOrganizationalResource"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualOrganization"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ActualOrganization"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualOrganization"/>
+        <Class IRI="ActualOrganization"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualOrganization"/>
+        <Class IRI="ActualOrganization"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualOrganization"/>
+        <Class IRI="ActualOrganization"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#ratifiedStandards"/>
-            <Class IRI="/updm.owl#Standard"/>
+            <ObjectProperty IRI="ratifiedStandards"/>
+            <Class IRI="Standard"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualOrganization"/>
+        <Class IRI="ActualOrganization"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualOrganization"/>
+        <Class IRI="ActualOrganization"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualOrganization"/>
+        <Class IRI="ActualOrganization"/>
         <DataMinCardinality cardinality="0">
-            <DataProperty IRI="/updm.owl#code_symbol"/>
+            <DataProperty IRI="code_symbol"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualOrganization"/>
+        <Class IRI="ActualOrganization"/>
         <DataMinCardinality cardinality="0">
-            <DataProperty IRI="/updm.owl#serviceType"/>
+            <DataProperty IRI="serviceType"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualOrganization"/>
+        <Class IRI="ActualOrganization"/>
         <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="/updm.owl#code_symbol"/>
+            <DataProperty IRI="code_symbol"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualOrganization"/>
+        <Class IRI="ActualOrganization"/>
         <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="/updm.owl#serviceType"/>
+            <DataProperty IRI="serviceType"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualOrganizationRole"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ActualOrganizationRole"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualOrganizationRole"/>
+        <Class IRI="ActualOrganizationRole"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualOrganizationRole"/>
+        <Class IRI="ActualOrganizationRole"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Slot"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualOrganizationRole"/>
+        <Class IRI="ActualOrganizationRole"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualOrganizationRole"/>
+        <Class IRI="ActualOrganizationRole"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Slot"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualOrganizationalResource"/>
-        <Class IRI="/updm.owl#LocationHolder"/>
+        <Class IRI="ActualOrganizationalResource"/>
+        <Class IRI="LocationHolder"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualPerson"/>
-        <Class IRI="/updm.owl#ActualPost"/>
+        <Class IRI="ActualPerson"/>
+        <Class IRI="ActualPost"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualPerson"/>
-        <Class IRI="/updm.owl#CompetenceProvider"/>
+        <Class IRI="ActualPerson"/>
+        <Class IRI="CompetenceProvider"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualPerson"/>
-        <Class IRI="/updm.owl#LocationHolder"/>
+        <Class IRI="ActualPerson"/>
+        <Class IRI="LocationHolder"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualPost"/>
-        <Class IRI="/updm.owl#ActualOrganizationalResource"/>
+        <Class IRI="ActualPost"/>
+        <Class IRI="ActualOrganizationalResource"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualPost"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ActualPost"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualPost"/>
+        <Class IRI="ActualPost"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualPost"/>
+        <Class IRI="ActualPost"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualPost"/>
+        <Class IRI="ActualPost"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualPost"/>
+        <Class IRI="ActualPost"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProject"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ActualProject"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProject"/>
+        <Class IRI="ActualProject"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProject"/>
+        <Class IRI="ActualProject"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#endDate"/>
-            <Class IRI="/updm.owl#ISO8601DateTime"/>
+            <ObjectProperty IRI="endDate"/>
+            <Class IRI="ISO8601DateTime"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProject"/>
+        <Class IRI="ActualProject"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProject"/>
+        <Class IRI="ActualProject"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#ownedMilestones"/>
-            <Class IRI="/updm.owl#ActualProjectMilestone"/>
+            <ObjectProperty IRI="ownedMilestones"/>
+            <Class IRI="ActualProjectMilestone"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProject"/>
+        <Class IRI="ActualProject"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#part"/>
-            <Class IRI="/updm.owl#ActualProject"/>
+            <ObjectProperty IRI="part"/>
+            <Class IRI="ActualProject"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProject"/>
+        <Class IRI="ActualProject"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#startDate"/>
-            <Class IRI="/updm.owl#ISO8601DateTime"/>
+            <ObjectProperty IRI="startDate"/>
+            <Class IRI="ISO8601DateTime"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProject"/>
+        <Class IRI="ActualProject"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#whole"/>
-            <Class IRI="/updm.owl#ActualProject"/>
+            <ObjectProperty IRI="whole"/>
+            <Class IRI="ActualProject"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProject"/>
+        <Class IRI="ActualProject"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#endDate"/>
-            <Class IRI="/updm.owl#ISO8601DateTime"/>
+            <ObjectProperty IRI="endDate"/>
+            <Class IRI="ISO8601DateTime"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProject"/>
+        <Class IRI="ActualProject"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProject"/>
+        <Class IRI="ActualProject"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProject"/>
+        <Class IRI="ActualProject"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#startDate"/>
-            <Class IRI="/updm.owl#ISO8601DateTime"/>
+            <ObjectProperty IRI="startDate"/>
+            <Class IRI="ISO8601DateTime"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProject"/>
+        <Class IRI="ActualProject"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#whole"/>
-            <Class IRI="/updm.owl#ActualProject"/>
+            <ObjectProperty IRI="whole"/>
+            <Class IRI="ActualProject"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProjectMilestone"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ActualProjectMilestone"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProjectMilestone"/>
+        <Class IRI="ActualProjectMilestone"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProjectMilestone"/>
+        <Class IRI="ActualProjectMilestone"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#date"/>
-            <Class IRI="/updm.owl#ISO8601DateTime"/>
+            <ObjectProperty IRI="date"/>
+            <Class IRI="ISO8601DateTime"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProjectMilestone"/>
+        <Class IRI="ActualProjectMilestone"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProjectMilestone"/>
+        <Class IRI="ActualProjectMilestone"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#resource"/>
-            <Class IRI="/updm.owl#SystemResource"/>
+            <ObjectProperty IRI="resource"/>
+            <Class IRI="SystemResource"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProjectMilestone"/>
+        <Class IRI="ActualProjectMilestone"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#date"/>
-            <Class IRI="/updm.owl#ISO8601DateTime"/>
+            <ObjectProperty IRI="date"/>
+            <Class IRI="ISO8601DateTime"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProjectMilestone"/>
+        <Class IRI="ActualProjectMilestone"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProjectMilestone"/>
+        <Class IRI="ActualProjectMilestone"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProjectMilestone"/>
+        <Class IRI="ActualProjectMilestone"/>
         <DataMinCardinality cardinality="0">
-            <DataProperty IRI="/updm.owl#description"/>
+            <DataProperty IRI="description"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProjectMilestone"/>
+        <Class IRI="ActualProjectMilestone"/>
         <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="/updm.owl#description"/>
+            <DataProperty IRI="description"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProjectMilestoneRole"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ActualProjectMilestoneRole"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProjectMilestoneRole"/>
+        <Class IRI="ActualProjectMilestoneRole"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProjectMilestoneRole"/>
+        <Class IRI="ActualProjectMilestoneRole"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Slot"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProjectMilestoneRole"/>
+        <Class IRI="ActualProjectMilestoneRole"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProjectMilestoneRole"/>
+        <Class IRI="ActualProjectMilestoneRole"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Slot"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProperty"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ActualProperty"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProperty"/>
+        <Class IRI="ActualProperty"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProperty"/>
+        <Class IRI="ActualProperty"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#endDate"/>
-            <Class IRI="/updm.owl#ISO8601DateTime"/>
+            <ObjectProperty IRI="endDate"/>
+            <Class IRI="ISO8601DateTime"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProperty"/>
+        <Class IRI="ActualProperty"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Slot"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProperty"/>
+        <Class IRI="ActualProperty"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#startDate"/>
-            <Class IRI="/updm.owl#ISO8601DateTime"/>
+            <ObjectProperty IRI="startDate"/>
+            <Class IRI="ISO8601DateTime"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProperty"/>
+        <Class IRI="ActualProperty"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#endDate"/>
-            <Class IRI="/updm.owl#ISO8601DateTime"/>
+            <ObjectProperty IRI="endDate"/>
+            <Class IRI="ISO8601DateTime"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProperty"/>
+        <Class IRI="ActualProperty"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProperty"/>
+        <Class IRI="ActualProperty"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Slot"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProperty"/>
+        <Class IRI="ActualProperty"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#startDate"/>
-            <Class IRI="/updm.owl#ISO8601DateTime"/>
+            <ObjectProperty IRI="startDate"/>
+            <Class IRI="ISO8601DateTime"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProperty"/>
+        <Class IRI="ActualProperty"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="/updm.owl#intention"/>
-            <Datatype IRI="/updm.owl#ActualPropertySetKind"/>
+            <DataProperty IRI="intention"/>
+            <Datatype IRI="ActualPropertySetKind"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualProperty"/>
+        <Class IRI="ActualProperty"/>
         <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="/updm.owl#intention"/>
-            <Datatype IRI="/updm.owl#ActualPropertySetKind"/>
+            <DataProperty IRI="intention"/>
+            <Datatype IRI="ActualPropertySetKind"/>
         </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualPropertySet"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ActualPropertySet"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualPropertySet"/>
+        <Class IRI="ActualPropertySet"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualPropertySet"/>
+        <Class IRI="ActualPropertySet"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#appliesTo"/>
-            <Class IRI="/updm.owl#UPDMElement"/>
+            <ObjectProperty IRI="appliesTo"/>
+            <Class IRI="UPDMElement"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualPropertySet"/>
+        <Class IRI="ActualPropertySet"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualPropertySet"/>
+        <Class IRI="ActualPropertySet"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#appliesTo"/>
-            <Class IRI="/updm.owl#UPDMElement"/>
+            <ObjectProperty IRI="appliesTo"/>
+            <Class IRI="UPDMElement"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualPropertySet"/>
+        <Class IRI="ActualPropertySet"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#InstanceSpecification"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ActualPropertySet"/>
+        <Class IRI="ActualPropertySet"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Alias"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="Alias"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Alias"/>
+        <Class IRI="Alias"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Alias"/>
+        <Class IRI="Alias"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Comment"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Alias"/>
+        <Class IRI="Alias"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Comment"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Alias"/>
+        <Class IRI="Alias"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Alias"/>
+        <Class IRI="Alias"/>
         <DataMinCardinality cardinality="0">
-            <DataProperty IRI="/updm.owl#nameOwner"/>
+            <DataProperty IRI="nameOwner"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ArchitecturalDescription"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#describes"/>
-            <Class IRI="/updm.owl#EnterprisePhase"/>
+            <ObjectProperty IRI="describes"/>
+            <Class IRI="EnterprisePhase"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Package"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#viewpoint"/>
-            <Class IRI="/updm.owl#Viewpoint"/>
+            <ObjectProperty IRI="viewpoint"/>
+            <Class IRI="Viewpoint"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#views"/>
-            <Class IRI="/updm.owl#View"/>
+            <ObjectProperty IRI="views"/>
+            <Class IRI="View"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#describes"/>
-            <Class IRI="/updm.owl#EnterprisePhase"/>
+            <ObjectProperty IRI="describes"/>
+            <Class IRI="EnterprisePhase"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Package"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="/updm.owl#architectureFrameworkKind"/>
+            <DataProperty IRI="architectureFrameworkKind"/>
             <Datatype abbreviatedIRI="xsd:boolean"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="/updm.owl#toBe"/>
+            <DataProperty IRI="toBe"/>
             <Datatype abbreviatedIRI="xsd:boolean"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
         <DataMinCardinality cardinality="0">
-            <DataProperty IRI="/updm.owl#approvalAuthority"/>
+            <DataProperty IRI="approvalAuthority"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
         <DataMinCardinality cardinality="0">
-            <DataProperty IRI="/updm.owl#architect"/>
+            <DataProperty IRI="architect"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
         <DataMinCardinality cardinality="0">
-            <DataProperty IRI="/updm.owl#assumptionAndConstraint"/>
+            <DataProperty IRI="assumptionAndConstraint"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
         <DataMinCardinality cardinality="0">
-            <DataProperty IRI="/updm.owl#creatingOrganization"/>
+            <DataProperty IRI="creatingOrganization"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
         <DataMinCardinality cardinality="0">
-            <DataProperty IRI="/updm.owl#dateCompleted"/>
+            <DataProperty IRI="dateCompleted"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
         <DataMinCardinality cardinality="0">
-            <DataProperty IRI="/updm.owl#purpose"/>
+            <DataProperty IRI="purpose"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
         <DataMinCardinality cardinality="0">
-            <DataProperty IRI="/updm.owl#recommendations"/>
+            <DataProperty IRI="recommendations"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
         <DataMinCardinality cardinality="0">
-            <DataProperty IRI="/updm.owl#summaryOfFindings"/>
+            <DataProperty IRI="summaryOfFindings"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
         <DataMinCardinality cardinality="0">
-            <DataProperty IRI="/updm.owl#toolsUsed"/>
+            <DataProperty IRI="toolsUsed"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
         <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="/updm.owl#architectureFrameworkKind"/>
+            <DataProperty IRI="architectureFrameworkKind"/>
             <Datatype abbreviatedIRI="xsd:boolean"/>
         </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
         <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="/updm.owl#dateCompleted"/>
+            <DataProperty IRI="dateCompleted"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
         <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="/updm.owl#toBe"/>
+            <DataProperty IRI="toBe"/>
             <Datatype abbreviatedIRI="xsd:boolean"/>
         </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ArchitectureMetadata"/>
-        <Class IRI="/updm.owl#Metadata"/>
+        <Class IRI="ArchitectureMetadata"/>
+        <Class IRI="Metadata"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#AsynchronousMessage"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="AsynchronousMessage"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Capability"/>
-        <Class IRI="/updm.owl#Desirer"/>
+        <Class IRI="Capability"/>
+        <Class IRI="Desirer"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Capability"/>
-        <Class IRI="/updm.owl#PropertySet"/>
+        <Class IRI="Capability"/>
+        <Class IRI="PropertySet"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Capability"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="Capability"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Capability"/>
+        <Class IRI="Capability"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Capability"/>
+        <Class IRI="Capability"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Class"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Capability"/>
+        <Class IRI="Capability"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Class"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Capability"/>
+        <Class IRI="Capability"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#CapabilityProperty"/>
-        <Class IRI="/updm.owl#Property"/>
+        <Class IRI="CapabilityProperty"/>
+        <Class IRI="Property"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#CapableElement"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="CapableElement"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Climate"/>
-        <Class IRI="/updm.owl#Environment"/>
+        <Class IRI="Climate"/>
+        <Class IRI="Environment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Command"/>
-        <Class IRI="/updm.owl#ResourceInteraction"/>
+        <Class IRI="Command"/>
+        <Class IRI="ResourceInteraction"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Competence"/>
-        <Class IRI="/updm.owl#PropertySet"/>
+        <Class IRI="Competence"/>
+        <Class IRI="PropertySet"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Competence"/>
-        <Class IRI="/updm.owl#SubjectOfForecast"/>
+        <Class IRI="Competence"/>
+        <Class IRI="SubjectOfForecast"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#CompetenceProvider"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="CompetenceProvider"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#CompetenceRequirer"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="CompetenceRequirer"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ConceptItem"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ConceptItem"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ConceptRole"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ConceptRole"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ConditionType"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ConditionType"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#DataModel"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="DataModel"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Definition"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="Definition"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#DeployedMilestone"/>
-        <Class IRI="/updm.owl#ActualProjectMilestone"/>
+        <Class IRI="DeployedMilestone"/>
+        <Class IRI="ActualProjectMilestone"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#DeployedMilestone"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="DeployedMilestone"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#DesiredEffect"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="DesiredEffect"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#DesiredState"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="DesiredState"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Desirer"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="Desirer"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#EnduringTask"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="EnduringTask"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Energy"/>
-        <Class IRI="/updm.owl#OperationalExchangeItem"/>
+        <Class IRI="Energy"/>
+        <Class IRI="OperationalExchangeItem"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#EnterpriseGoal"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="EnterpriseGoal"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#EnterprisePhase"/>
-        <Class IRI="/updm.owl#CapableElement"/>
+        <Class IRI="EnterprisePhase"/>
+        <Class IRI="CapableElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#EnterpriseVision"/>
-        <Class IRI="/updm.owl#Desirer"/>
+        <Class IRI="EnterpriseVision"/>
+        <Class IRI="Desirer"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#EntityItem"/>
-        <Class IRI="/updm.owl#ExchangeElement"/>
+        <Class IRI="EntityItem"/>
+        <Class IRI="ExchangeElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#EntityItem"/>
-        <Class IRI="/updm.owl#SubjectOfOperationalConstraint"/>
+        <Class IRI="EntityItem"/>
+        <Class IRI="SubjectOfOperationalConstraint"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Environment"/>
-        <Class IRI="/updm.owl#ConditionType"/>
+        <Class IRI="Environment"/>
+        <Class IRI="ConditionType"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Environment"/>
-        <Class IRI="/updm.owl#PropertySet"/>
+        <Class IRI="Environment"/>
+        <Class IRI="PropertySet"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#EnvironmentProperty"/>
-        <Class IRI="/updm.owl#Property"/>
+        <Class IRI="EnvironmentProperty"/>
+        <Class IRI="Property"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#EnvironmentProperty"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="EnvironmentProperty"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Exchange"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="Exchange"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ExchangeElement"/>
-        <Class IRI="/updm.owl#OperationalExchangeItem"/>
+        <Class IRI="ExchangeElement"/>
+        <Class IRI="OperationalExchangeItem"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ExchangeElement"/>
-        <Class IRI="/updm.owl#ResourceInteractionItem"/>
+        <Class IRI="ExchangeElement"/>
+        <Class IRI="ResourceInteractionItem"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ExchangeElement"/>
-        <Class IRI="/updm.owl#SubjectOfOperationalConstraint"/>
+        <Class IRI="ExchangeElement"/>
+        <Class IRI="SubjectOfOperationalConstraint"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ExchangeElement"/>
-        <Class IRI="/updm.owl#SubjectOfResourceConstraint"/>
+        <Class IRI="ExchangeElement"/>
+        <Class IRI="SubjectOfResourceConstraint"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ExchangeElementKind"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ExchangeElementKind"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Function"/>
-        <Class IRI="/updm.owl#Activity"/>
+        <Class IRI="Function"/>
+        <Class IRI="Activity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Function"/>
+        <Class IRI="Function"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#realizedBy"/>
-            <Class IRI="/updm.owl#ResourceOperation"/>
+            <ObjectProperty IRI="realizedBy"/>
+            <Class IRI="ResourceOperation"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#FunctionAction"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="FunctionAction"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#GeoPoliticalExtentType"/>
-        <Class IRI="/updm.owl#OperationalExchangeItem"/>
+        <Class IRI="GeoPoliticalExtentType"/>
+        <Class IRI="OperationalExchangeItem"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#HighLevelOperationalConcept"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="HighLevelOperationalConcept"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ISO8601DateTime"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ISO8601DateTime"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#IncrementMilestone"/>
-        <Class IRI="/updm.owl#ActualProjectMilestone"/>
+        <Class IRI="IncrementMilestone"/>
+        <Class IRI="ActualProjectMilestone"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Information"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="Information"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#KnownResource"/>
-        <Class IRI="/updm.owl#NodeRole"/>
+        <Class IRI="KnownResource"/>
+        <Class IRI="NodeRole"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#LightCondition"/>
-        <Class IRI="/updm.owl#Environment"/>
+        <Class IRI="LightCondition"/>
+        <Class IRI="Environment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Location"/>
-        <Class IRI="/updm.owl#ActualLocation"/>
+        <Class IRI="Location"/>
+        <Class IRI="ActualLocation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#LocationHolder"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="LocationHolder"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#LocationType"/>
-        <Class IRI="/updm.owl#ConceptItem"/>
+        <Class IRI="LocationType"/>
+        <Class IRI="ConceptItem"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#LocationType"/>
-        <Class IRI="/updm.owl#ConditionType"/>
+        <Class IRI="LocationType"/>
+        <Class IRI="ConditionType"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#LocationTypeKind"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="LocationTypeKind"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#LogicalArchitecture"/>
-        <Class IRI="/updm.owl#NodeParent"/>
+        <Class IRI="LogicalArchitecture"/>
+        <Class IRI="NodeParent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#LogicalDataModel"/>
-        <Class IRI="/updm.owl#DataModel"/>
+        <Class IRI="LogicalDataModel"/>
+        <Class IRI="DataModel"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Measurement"/>
-        <Class IRI="/updm.owl#Property"/>
+        <Class IRI="Measurement"/>
+        <Class IRI="Property"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Measurement"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="Measurement"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#MeasurementSet"/>
-        <Class IRI="/updm.owl#PropertySet"/>
+        <Class IRI="MeasurementSet"/>
+        <Class IRI="PropertySet"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#MeasurementSet"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="MeasurementSet"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Metadata"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="Metadata"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Mission"/>
-        <Class IRI="/updm.owl#SubjectOfOperationalConstraint"/>
+        <Class IRI="Mission"/>
+        <Class IRI="SubjectOfOperationalConstraint"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Mission"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="Mission"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#NeedLine"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="NeedLine"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#NoLongerUsedMilestone"/>
-        <Class IRI="/updm.owl#ActualProjectMilestone"/>
+        <Class IRI="NoLongerUsedMilestone"/>
+        <Class IRI="ActualProjectMilestone"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#NoLongerUsedMilestone"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="NoLongerUsedMilestone"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Node"/>
-        <Class IRI="/updm.owl#ActivitySubject"/>
+        <Class IRI="Node"/>
+        <Class IRI="ActivitySubject"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Node"/>
-        <Class IRI="/updm.owl#SubjectOfOperationalConstraint"/>
+        <Class IRI="Node"/>
+        <Class IRI="SubjectOfOperationalConstraint"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Node"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="Node"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#NodeOperation"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="NodeOperation"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#NodeParent"/>
-        <Class IRI="/updm.owl#Participant"/>
+        <Class IRI="NodeParent"/>
+        <Class IRI="Participant"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#NodePort"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="NodePort"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#NodeRole"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="NodeRole"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#OperationalActivity"/>
-        <Class IRI="/updm.owl#Activity"/>
+        <Class IRI="OperationalActivity"/>
+        <Class IRI="Activity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#OperationalActivity"/>
-        <Class IRI="/updm.owl#SubjectOfOperationalConstraint"/>
+        <Class IRI="OperationalActivity"/>
+        <Class IRI="SubjectOfOperationalConstraint"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#OperationalActivityAction"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="OperationalActivityAction"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#OperationalActivityEdge"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="OperationalActivityEdge"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#OperationalConstraint"/>
-        <Class IRI="/updm.owl#Rule"/>
+        <Class IRI="OperationalConstraint"/>
+        <Class IRI="Rule"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#OperationalEventTrace"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="OperationalEventTrace"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#OperationalExchange"/>
-        <Class IRI="/updm.owl#Exchange"/>
+        <Class IRI="OperationalExchange"/>
+        <Class IRI="Exchange"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#OperationalExchange"/>
-        <Class IRI="/updm.owl#SubjectOfOperationalConstraint"/>
+        <Class IRI="OperationalExchange"/>
+        <Class IRI="SubjectOfOperationalConstraint"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#OperationalExchangeItem"/>
-        <Class IRI="/updm.owl#ActivitySubject"/>
+        <Class IRI="OperationalExchangeItem"/>
+        <Class IRI="ActivitySubject"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#OperationalExchangeItem"/>
-        <Class IRI="/updm.owl#Resource"/>
+        <Class IRI="OperationalExchangeItem"/>
+        <Class IRI="Resource"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#OperationalExchangeItem"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="OperationalExchangeItem"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#OperationalExchangeKind"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="OperationalExchangeKind"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#OperationalMessage"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="OperationalMessage"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#OperationalParameter"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="OperationalParameter"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#OperationalState"/>
-        <Class IRI="/updm.owl#DesiredState"/>
+        <Class IRI="OperationalState"/>
+        <Class IRI="DesiredState"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#OperationalState"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="OperationalState"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#OperationalStateDescription"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="OperationalStateDescription"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Organization"/>
-        <Class IRI="/updm.owl#OrganizationalResource"/>
+        <Class IRI="Organization"/>
+        <Class IRI="OrganizationalResource"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Organization"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="Organization"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#OrganizationalProjectRelationship"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="OrganizationalProjectRelationship"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#OrganizationalResource"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="OrganizationalResource"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#OutOfServiceMilestone"/>
-        <Class IRI="/updm.owl#ActualProjectMilestone"/>
+        <Class IRI="OutOfServiceMilestone"/>
+        <Class IRI="ActualProjectMilestone"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Overlap"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="Overlap"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#OwnsProcess"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="OwnsProcess"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Participant"/>
-        <Class IRI="/updm.owl#CapableElement"/>
+        <Class IRI="Participant"/>
+        <Class IRI="CapableElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Participant"/>
-        <Class IRI="/updm.owl#ConceptItem"/>
+        <Class IRI="Participant"/>
+        <Class IRI="ConceptItem"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Participant"/>
-        <Class IRI="/updm.owl#Desirer"/>
+        <Class IRI="Participant"/>
+        <Class IRI="Desirer"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Participant"/>
-        <Class IRI="/updm.owl#OperationalExchangeItem"/>
+        <Class IRI="Participant"/>
+        <Class IRI="OperationalExchangeItem"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Person"/>
-        <Class IRI="/updm.owl#ActualOrganization"/>
+        <Class IRI="Performer"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Post"/>
-        <Class IRI="/updm.owl#CompetenceRequirer"/>
+        <Class IRI="Person"/>
+        <Class IRI="ActualOrganization"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Post"/>
-        <Class IRI="/updm.owl#OrganizationalResource"/>
+        <Class IRI="Post"/>
+        <Class IRI="CompetenceRequirer"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ProblemDomain"/>
-        <Class IRI="/updm.owl#NodeRole"/>
+        <Class IRI="Post"/>
+        <Class IRI="OrganizationalResource"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ProblemDomain"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ProblemDomain"/>
+        <Class IRI="NodeRole"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ProjectActivity"/>
-        <Class IRI="/updm.owl#Activity"/>
+        <Class IRI="ProblemDomain"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ProjectMilestone"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ProjectActivity"/>
+        <Class IRI="Activity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ProjectMilestoneRole"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ProjectMilestone"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ProjectOwnership"/>
-        <Class IRI="/updm.owl#OrganizationalProjectRelationship"/>
+        <Class IRI="ProjectMilestoneRole"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ProjectSequence"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ProjectOwnership"/>
+        <Class IRI="OrganizationalProjectRelationship"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ProjectStatus"/>
-        <Class IRI="/updm.owl#ActualProperty"/>
+        <Class IRI="ProjectSequence"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ProjectType"/>
-        <Class IRI="/updm.owl#Desirer"/>
+        <Class IRI="ProjectStatus"/>
+        <Class IRI="ActualProperty"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ProjectType"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ProjectType"/>
+        <Class IRI="Desirer"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Property"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ProjectType"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#PropertySet"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="Property"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Request"/>
-        <Class IRI="/updm.owl#ServicePort"/>
+        <Class IRI="PropertySet"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Request"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="Request"/>
+        <Class IRI="ServicePort"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Resource"/>
-        <Class IRI="/updm.owl#LocationHolder"/>
+        <Class IRI="Request"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Resource"/>
-        <Class IRI="/updm.owl#PropertySet"/>
+        <Class IRI="Resource"/>
+        <Class IRI="LocationHolder"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceConstraint"/>
-        <Class IRI="/updm.owl#Rule"/>
+        <Class IRI="Resource"/>
+        <Class IRI="PropertySet"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceEventTrace"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ResourceConstraint"/>
+        <Class IRI="Rule"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceEventTrace"/>
+        <Class IRI="ResourceEventTrace"/>
+        <Class IRI="UPDMElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ResourceEventTrace"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceEventTrace"/>
+        <Class IRI="ResourceEventTrace"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Interaction"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceEventTrace"/>
+        <Class IRI="ResourceEventTrace"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Interaction"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceEventTrace"/>
+        <Class IRI="ResourceEventTrace"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceInteraction"/>
-        <Class IRI="/updm.owl#Exchange"/>
+        <Class IRI="ResourceInteraction"/>
+        <Class IRI="Exchange"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceInteractionItem"/>
-        <Class IRI="/updm.owl#Resource"/>
+        <Class IRI="ResourceInteractionItem"/>
+        <Class IRI="Resource"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceInteractionItem"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ResourceInteractionItem"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceMessage"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ResourceMessage"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceMessage"/>
+        <Class IRI="ResourceMessage"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceMessage"/>
+        <Class IRI="ResourceMessage"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#carries"/>
-            <Class IRI="/updm.owl#ResourceInteraction"/>
+            <ObjectProperty IRI="carries"/>
+            <Class IRI="ResourceInteraction"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceMessage"/>
+        <Class IRI="ResourceMessage"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Message"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceMessage"/>
+        <Class IRI="ResourceMessage"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#operation"/>
-            <Class IRI="/updm.owl#ResourceOperation"/>
+            <ObjectProperty IRI="operation"/>
+            <Class IRI="ResourceOperation"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceMessage"/>
+        <Class IRI="ResourceMessage"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Message"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceMessage"/>
+        <Class IRI="ResourceMessage"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceMessage"/>
+        <Class IRI="ResourceMessage"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#operation"/>
-            <Class IRI="/updm.owl#ResourceOperation"/>
+            <ObjectProperty IRI="operation"/>
+            <Class IRI="ResourceOperation"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceOperation"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ResourceOperation"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceOperation"/>
+        <Class IRI="ResourceOperation"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceOperation"/>
+        <Class IRI="ResourceOperation"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Operation"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceOperation"/>
+        <Class IRI="ResourceOperation"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#realizes"/>
-            <Class IRI="/updm.owl#Function"/>
+            <ObjectProperty IRI="realizes"/>
+            <Class IRI="Function"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceOperation"/>
+        <Class IRI="ResourceOperation"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceOperation"/>
+        <Class IRI="ResourceOperation"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Operation"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceOperation"/>
+        <Class IRI="ResourceOperation"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#realizes"/>
-            <Class IRI="/updm.owl#Function"/>
+            <ObjectProperty IRI="realizes"/>
+            <Class IRI="Function"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceParameter"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ResourceParameter"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceRole"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ResourceRole"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceRole"/>
+        <Class IRI="ResourceRole"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceRole"/>
+        <Class IRI="ResourceRole"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Property"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceRole"/>
+        <Class IRI="ResourceRole"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="/updm.owl#performsInContext"/>
-            <Class IRI="/updm.owl#Function"/>
+            <ObjectProperty IRI="performsInContext"/>
+            <Class IRI="Function"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceRole"/>
+        <Class IRI="ResourceRole"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Metaclass"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceRole"/>
+        <Class IRI="ResourceRole"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/updm.owl#extends"/>
+            <ObjectProperty IRI="extends"/>
             <Class IRI="http://www.semanticweb.org/lonniev/ontologies/2015/6/uml#Property"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceRole"/>
+        <Class IRI="ResourceRole"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="/updm.owl#roleKind"/>
-            <Datatype IRI="/updm.owl#RoleKind"/>
+            <DataProperty IRI="roleKind"/>
+            <Datatype IRI="RoleKind"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceRole"/>
+        <Class IRI="ResourceRole"/>
         <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="/updm.owl#roleKind"/>
-            <Datatype IRI="/updm.owl#RoleKind"/>
+            <DataProperty IRI="roleKind"/>
+            <Datatype IRI="RoleKind"/>
         </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ResourceState"/>
-        <Class IRI="/updm.owl#DesiredState"/>
+        <Class IRI="ResourceState"/>
+        <Class IRI="DesiredState"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Responsibility"/>
-        <Class IRI="/updm.owl#CompetenceRequirer"/>
+        <Class IRI="Responsibility"/>
+        <Class IRI="CompetenceRequirer"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Responsibility"/>
-        <Class IRI="/updm.owl#OrganizationalResource"/>
+        <Class IRI="Responsibility"/>
+        <Class IRI="OrganizationalResource"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Rule"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="Rule"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#RuleKind"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="RuleKind"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#SameAs"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="SameAs"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#SecurityAttributesGroup"/>
-        <Class IRI="/updm.owl#PropertySet"/>
+        <Class IRI="SecurityAttributesGroup"/>
+        <Class IRI="PropertySet"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#SecurityDomain"/>
-        <Class IRI="/updm.owl#Node"/>
+        <Class IRI="SecurityDomain"/>
+        <Class IRI="Node"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ServiceAttribute"/>
-        <Class IRI="/updm.owl#Property"/>
+        <Class IRI="ServiceAttribute"/>
+        <Class IRI="Property"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ServiceChannel"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ServiceChannel"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ServiceDescription"/>
-        <Class IRI="/updm.owl#ArchitecturalDescription"/>
+        <Class IRI="ServiceDescription"/>
+        <Class IRI="ArchitecturalDescription"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ServiceFeature"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ServiceFeature"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ServiceFunction"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ServiceFunction"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ServiceFunctionAction"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ServiceFunctionAction"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ServiceFunctionEdge"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ServiceFunctionEdge"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ServiceInterface"/>
-        <Class IRI="/updm.owl#PropertySet"/>
+        <Class IRI="ServiceInterface"/>
+        <Class IRI="PropertySet"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ServiceInterface"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ServiceInterface"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ServiceLevelValue"/>
-        <Class IRI="/updm.owl#ActualProperty"/>
+        <Class IRI="ServiceLevelValue"/>
+        <Class IRI="ActualProperty"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ServiceLevelValueSet"/>
-        <Class IRI="/updm.owl#ActualPropertySet"/>
+        <Class IRI="ServiceLevelValueSet"/>
+        <Class IRI="ActualPropertySet"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ServiceMessage"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ServiceMessage"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ServiceMessageHandler"/>
-        <Class IRI="/updm.owl#ServiceFeature"/>
+        <Class IRI="ServiceMessageHandler"/>
+        <Class IRI="ServiceFeature"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ServiceOperation"/>
-        <Class IRI="/updm.owl#ServiceFeature"/>
+        <Class IRI="ServiceOperation"/>
+        <Class IRI="ServiceFeature"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ServicePolicy"/>
-        <Class IRI="/updm.owl#Rule"/>
+        <Class IRI="ServicePolicy"/>
+        <Class IRI="Rule"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ServicePort"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ServicePort"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#ServiceStateMachine"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="ServiceStateMachine"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Standard"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="Standard"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#StandardOperationalActivity"/>
-        <Class IRI="/updm.owl#OperationalActivity"/>
+        <Class IRI="StandardOperationalActivity"/>
+        <Class IRI="OperationalActivity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#StereotypeExtension"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="StereotypeExtension"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#StructuralPart"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="StructuralPart"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#SubjectOfForecast"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="SubjectOfForecast"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#SubjectOfOperationalConstraint"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="SubjectOfOperationalConstraint"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#SubjectOfOperationalStateMachine"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="SubjectOfOperationalStateMachine"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#SubjectOfResourceConstraint"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="SubjectOfResourceConstraint"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#SystemResource"/>
-        <Class IRI="/updm.owl#OperationalExchangeItem"/>
+        <Class IRI="SystemResource"/>
+        <Class IRI="OperationalExchangeItem"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#SystemResource"/>
-        <Class IRI="/updm.owl#Participant"/>
+        <Class IRI="SystemResource"/>
+        <Class IRI="Participant"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#SystemResource"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="SystemResource"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#TemporalPart"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="TemporalPart"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#View"/>
-        <Class IRI="/updm.owl#SysML_View"/>
+        <Class IRI="View"/>
+        <Class IRI="SysML_View"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#View"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="View"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#Viewpoint"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="Viewpoint"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/updm.owl#VisionStatement"/>
-        <Class IRI="/updm.owl#UPDMElement"/>
+        <Class IRI="VisionStatement"/>
+        <Class IRI="UPDMElement"/>
     </SubClassOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="/updm.owl#viewpoints"/>
+        <ObjectProperty IRI="viewpoints"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="/updm.owl#actsUpon"/>
-        <ObjectProperty IRI="/updm.owl#subject"/>
+        <ObjectProperty IRI="actsUpon"/>
+        <ObjectProperty IRI="subject"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="/updm.owl#actualPropertySet"/>
-        <ObjectProperty IRI="/updm.owl#appliesTo"/>
+        <ObjectProperty IRI="actualPropertySet"/>
+        <ObjectProperty IRI="appliesTo"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="/updm.owl#describedBy"/>
-        <ObjectProperty IRI="/updm.owl#describes"/>
+        <ObjectProperty IRI="describedBy"/>
+        <ObjectProperty IRI="describes"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="/updm.owl#extendedBy"/>
-        <ObjectProperty IRI="/updm.owl#extends"/>
+        <ObjectProperty IRI="extendedBy"/>
+        <ObjectProperty IRI="extends"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="/updm.owl#milestone"/>
-        <ObjectProperty IRI="/updm.owl#resource"/>
+        <ObjectProperty IRI="milestone"/>
+        <ObjectProperty IRI="resource"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="/updm.owl#part"/>
-        <ObjectProperty IRI="/updm.owl#whole"/>
+        <ObjectProperty IRI="part"/>
+        <ObjectProperty IRI="whole"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="/updm.owl#ratifiedBy"/>
-        <ObjectProperty IRI="/updm.owl#ratifiedStandards"/>
+        <ObjectProperty IRI="ratifiedBy"/>
+        <ObjectProperty IRI="ratifiedStandards"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="/updm.owl#realizedBy"/>
-        <ObjectProperty IRI="/updm.owl#realizes"/>
+        <ObjectProperty IRI="realizedBy"/>
+        <ObjectProperty IRI="realizes"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#activityPerformedByPerformer"/>
-        <Class IRI="#Performer"/>
+        <ObjectProperty IRI="activityPerformedByPerformer"/>
+        <Class IRI="Performer"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#activityPerformedByPerformer"/>
-        <Class IRI="/updm.owl#OperationalActivity"/>
+        <ObjectProperty IRI="activityPerformedByPerformer"/>
+        <Class IRI="OperationalActivity"/>
     </ObjectPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="/updm.owl#architectureFrameworkKind"/>
-        <Datatype IRI="/updm.owl#ArchitectureFrameworkKind"/>
+        <DataProperty IRI="architectureFrameworkKind"/>
+        <Datatype IRI="ArchitectureFrameworkKind"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="/updm.owl#intention"/>
-        <Datatype IRI="/updm.owl#ActualPropertySetKind"/>
+        <DataProperty IRI="intention"/>
+        <Datatype IRI="ActualPropertySetKind"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="/updm.owl#roleKind"/>
-        <Datatype IRI="/updm.owl#RoleKind"/>
+        <DataProperty IRI="roleKind"/>
+        <Datatype IRI="RoleKind"/>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/updm.owl#Activity</IRI>
+        <IRI>Activity</IRI>
         <Literal>An abstract element that represents a behavior (i.e., a Function or OperationalActivity) that can be performed by a Performer.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <IRI>/updm.owl#Activity</IRI>
+        <IRI>Activity</IRI>
         <Literal>2.1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/updm.owl#ActivitySubject</IRI>
+        <IRI>ActivitySubject</IRI>
         <Literal>Anything that is acted upon by an OperationalActivity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <IRI>/updm.owl#ActivitySubject</IRI>
+        <IRI>ActivitySubject</IRI>
         <Literal>2.1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/updm.owl#ActualLocation</IRI>
+        <IRI>ActualLocation</IRI>
         <Literal> A PhysicalLocation (MODAF::ActualLocation) is a location anywhere on the earth. The means of describing the location is a string (locationDescription). The information contained in that string is governed by the taxonomy reference (e.g., if the PhysicalLocation is a “GPS reference,” the string will contain the GPS coordinates). NOTE: this has been extended in UPDM to include non-earth locations.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <IRI>/updm.owl#ActualLocation</IRI>
+        <IRI>ActualLocation</IRI>
         <Literal>2.1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/updm.owl#ActualOrganization</IRI>
+        <IRI>ActualOrganization</IRI>
         <Literal>An actual specific organization, an instance of an organization class (e.g., “The US Department of Defense”).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <IRI>/updm.owl#ActualOrganization</IRI>
+        <IRI>ActualOrganization</IRI>
         <Literal>2.1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/updm.owl#ActualOrganizationRole</IRI>
+        <IRI>ActualOrganizationRole</IRI>
         <Literal>Relates an actual specific organization to an actual specific organizational resource that fulfills a role in that organization</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <IRI>/updm.owl#ActualOrganizationRole</IRI>
+        <IRI>ActualOrganizationRole</IRI>
         <Literal>2.1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/updm.owl#ActualPost</IRI>
+        <IRI>ActualPost</IRI>
         <Literal>An actual, specific post, an instance of a PostType class (e.g., “President of the United States of America”).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <IRI>/updm.owl#ActualPost</IRI>
+        <IRI>ActualPost</IRI>
         <Literal>2.1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/updm.owl#ActualProject</IRI>
+        <IRI>ActualProject</IRI>
         <Literal>A time-limited endeavor to create a specific set of products or services.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <IRI>/updm.owl#ActualProject</IRI>
+        <IRI>ActualProject</IRI>
         <Literal>2.1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/updm.owl#ActualProjectMilestone</IRI>
+        <IRI>ActualProjectMilestone</IRI>
         <Literal>An event in a ActualProject (MODAF::Project) by which progress is measured.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <IRI>/updm.owl#ActualProjectMilestone</IRI>
+        <IRI>ActualProjectMilestone</IRI>
         <Literal>2.1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/updm.owl#ActualProjectMilestoneRole</IRI>
+        <IRI>ActualProjectMilestoneRole</IRI>
         <Literal>An instance of a ProjectMilestoneRole in the context of an ActualProject.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <IRI>/updm.owl#ActualProjectMilestoneRole</IRI>
+        <IRI>ActualProjectMilestoneRole</IRI>
         <Literal>2.1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/updm.owl#ActualProperty</IRI>
+        <IRI>ActualProperty</IRI>
         <Literal>The value of a Measure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <IRI>/updm.owl#ActualProperty</IRI>
+        <IRI>ActualProperty</IRI>
         <Literal>2.1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/updm.owl#ActualPropertySet</IRI>
+        <IRI>ActualPropertySet</IRI>
         <Literal>A set or collection of ActualMeasurement(s). A date of measurement can be set. An intent of
 ActualMeasurementSet can be “Result,” “Required,” or “Estimate”.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <IRI>/updm.owl#ActualPropertySet</IRI>
+        <IRI>ActualPropertySet</IRI>
         <Literal>2.1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/updm.owl#Alias</IRI>
+        <IRI>Alias</IRI>
         <Literal>A UPDM Artifact used to define an alternative name for an element as used by DoDAF or MODAF.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <IRI>/updm.owl#Alias</IRI>
+        <IRI>Alias</IRI>
         <Literal>2.1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/updm.owl#ArchitecturalDescription</IRI>
+        <IRI>ArchitecturalDescription</IRI>
         <Literal>A specification of a system of systems at a technical level which also provides the business context for the system of systems.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <IRI>/updm.owl#ArchitecturalDescription</IRI>
+        <IRI>ArchitecturalDescription</IRI>
         <Literal>2.1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/updm.owl#Capability</IRI>
+        <IRI>Capability</IRI>
         <Literal>A high level specification of the enterprise’s ability.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <IRI>/updm.owl#Capability</IRI>
+        <IRI>Capability</IRI>
         <Literal>2.1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/updm.owl#ProjectMilestoneRole</IRI>
+        <IRI>ProjectMilestoneRole</IRI>
         <Literal>An instance of a ProjectMilestoneRole in the context of an ActualProject.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <IRI>/updm.owl#ProjectMilestoneRole</IRI>
+        <IRI>ProjectMilestoneRole</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/updm.owl#ResourceEventTrace</IRI>
+        <IRI>ResourceEventTrace</IRI>
         <Literal>A UPDM artifact that extends a UML Interaction. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <IRI>/updm.owl#ResourceEventTrace</IRI>
+        <IRI>ResourceEventTrace</IRI>
         <Literal>2.1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/updm.owl#ResourceMessage</IRI>
+        <IRI>ResourceMessage</IRI>
         <Literal>Message for use in a Resource EventTrace implements a ResourceInteraction.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <IRI>/updm.owl#ResourceMessage</IRI>
+        <IRI>ResourceMessage</IRI>
         <Literal>2.1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/updm.owl#ResourceOperation</IRI>
+        <IRI>ResourceOperation</IRI>
         <Literal>A partial or full realization of Function.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <IRI>/updm.owl#ResourceOperation</IRI>
+        <IRI>ResourceOperation</IRI>
         <Literal>2.1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/updm.owl#ResourceRole</IRI>
+        <IRI>ResourceRole</IRI>
         <Literal>abstract element.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <IRI>/updm.owl#ResourceRole</IRI>
+        <IRI>ResourceRole</IRI>
         <Literal>2.1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/updm.owl#UPDMElement</IRI>
+        <IRI>UPDMElement</IRI>
         <Literal>A relationship between an ActualOrganisation and a Project.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <IRI>/updm.owl#UPDMElement</IRI>
+        <IRI>UPDMElement</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.1</Literal>
     </AnnotationAssertion>
     <DatatypeDefinition>
-        <Datatype IRI="/updm.owl#ActualPropertySetKind"/>
+        <Datatype IRI="ActualPropertySetKind"/>
         <DataOneOf>
             <Literal>Actual</Literal>
             <Literal>Estimate</Literal>
@@ -2640,7 +2640,7 @@ ActualMeasurementSet can be “Result,” “Required,” or “Estimate”.</Li
         </DataOneOf>
     </DatatypeDefinition>
     <DatatypeDefinition>
-        <Datatype IRI="/updm.owl#ArchitectureFrameworkKind"/>
+        <Datatype IRI="ArchitectureFrameworkKind"/>
         <DataOneOf>
             <Literal>DoDAF</Literal>
             <Literal>MODAF</Literal>
@@ -2648,7 +2648,7 @@ ActualMeasurementSet can be “Result,” “Required,” or “Estimate”.</Li
         </DataOneOf>
     </DatatypeDefinition>
     <DatatypeDefinition>
-        <Datatype IRI="/updm.owl#RoleKind"/>
+        <Datatype IRI="RoleKind"/>
         <DataOneOf>
             <Literal>Component</Literal>
             <Literal>Equipment</Literal>

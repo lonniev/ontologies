@@ -1,4 +1,4 @@
-@prefix : <https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#> .
+@prefix : <https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -6,14 +6,14 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm> .
 
-<https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm> rdf:type owl:Ontology ;
+<https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#> a owl:Ontology ;
                                                                         owl:imports <https://raw.githubusercontent.com/lonniev/ontologies/master/omg/uml/uml.owl> .
 
 #################################################################
 #    Datatypes
 #################################################################
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualPropertySetKind
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ActualPropertySetKind
 :ActualPropertySetKind rdf:type rdfs:Datatype ;
                        owl:equivalentClass [ rdf:type rdfs:Datatype ;
                                              owl:oneOf [ rdf:type rdf:List ;
@@ -29,7 +29,7 @@
                                            ] .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ArchitectureFrameworkKind
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ArchitectureFrameworkKind
 :ArchitectureFrameworkKind rdf:type rdfs:Datatype ;
                            owl:equivalentClass [ rdf:type rdfs:Datatype ;
                                                  owl:oneOf [ rdf:type rdf:List ;
@@ -45,11 +45,11 @@
                                                ] .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#LocationKind
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#LocationKind
 :LocationKind rdf:type rdfs:Datatype .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#RoleKind
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#RoleKind
 :RoleKind rdf:type rdfs:Datatype ;
           owl:equivalentClass [ rdf:type rdfs:Datatype ;
                                 owl:oneOf [ rdf:type rdf:List ;
@@ -108,176 +108,176 @@
                               rdfs:range :OperationalActivity .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ArbitraryConnector
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ArbitraryConnector
 :ArbitraryConnector rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ArchitecturalReference
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ArchitecturalReference
 :ArchitecturalReference rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Command
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Command
 :Command rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Details
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Details
 :Details rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Exhibits
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Exhibits
 :Exhibits rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Expose
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Expose
 :Expose rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#FillsPost
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#FillsPost
 :FillsPost rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Implements
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Implements
 :Implements rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#IsCapableOfPerforming
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#IsCapableOfPerforming
 :IsCapableOfPerforming rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#MapsToCapability
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#MapsToCapability
 :MapsToCapability rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ProvidesCompetence
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ProvidesCompetence
 :ProvidesCompetence rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#RequiresCompetence
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#RequiresCompetence
 :RequiresCompetence rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Trustline
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Trustline
 :Trustline rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#activityPerformableUnderCondition
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#activityPerformableUnderCondition
 :activityPerformableUnderCondition rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#actsUpon
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#actsUpon
 :actsUpon rdf:type owl:ObjectProperty ;
           owl:inverseOf :subject .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#actualPropertySet
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#actualPropertySet
 :actualPropertySet rdf:type owl:ObjectProperty ;
                    owl:inverseOf :appliesTo .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#appliesTo
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#appliesTo
 :appliesTo rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#carries
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#carries
 :carries rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#date
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#date
 :date rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#describedBy
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#describedBy
 :describedBy rdf:type owl:ObjectProperty ;
              owl:inverseOf :describes .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#describes
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#describes
 :describes rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#endDate
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#endDate
 :endDate rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#extendedBy
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#extendedBy
 :extendedBy rdf:type owl:ObjectProperty ;
             owl:inverseOf :extends .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#extends
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#extends
 :extends rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#milestone
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#milestone
 :milestone rdf:type owl:ObjectProperty ;
            owl:inverseOf :resource .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#operation
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#operation
 :operation rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ownedMilestones
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ownedMilestones
 :ownedMilestones rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#part
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#part
 :part rdf:type owl:ObjectProperty ;
       owl:inverseOf :whole .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#performsInContext
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#performsInContext
 :performsInContext rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#physicalLocation
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#physicalLocation
 :physicalLocation rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ratifiedBy
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ratifiedBy
 :ratifiedBy rdf:type owl:ObjectProperty ;
             owl:inverseOf :ratifiedStandards .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ratifiedStandards
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ratifiedStandards
 :ratifiedStandards rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#realizedBy
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#realizedBy
 :realizedBy rdf:type owl:ObjectProperty ;
             owl:inverseOf :realizes .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#realizes
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#realizes
 :realizes rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#resource
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#resource
 :resource rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#startDate
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#startDate
 :startDate rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#subject
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#subject
 :subject rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#viewpoint
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#viewpoint
 :viewpoint rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#viewpoints
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#viewpoints
 :viewpoints rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf owl:topObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#views
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#views
 :views rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#whole
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#whole
 :whole rdf:type owl:ObjectProperty .
 
 
@@ -285,90 +285,90 @@
 #    Data properties
 #################################################################
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#address
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#address
 :address rdf:type owl:DatatypeProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#approvalAuthority
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#approvalAuthority
 :approvalAuthority rdf:type owl:DatatypeProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#architect
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#architect
 :architect rdf:type owl:DatatypeProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#architectureFrameworkKind
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#architectureFrameworkKind
 :architectureFrameworkKind rdf:type owl:DatatypeProperty ;
                            rdfs:range :ArchitectureFrameworkKind .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#assumptionAndConstraint
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#assumptionAndConstraint
 :assumptionAndConstraint rdf:type owl:DatatypeProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#code_symbol
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#code_symbol
 :code_symbol rdf:type owl:DatatypeProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#creatingOrganization
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#creatingOrganization
 :creatingOrganization rdf:type owl:DatatypeProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#customKind
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#customKind
 :customKind rdf:type owl:DatatypeProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#dateCompleted
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#dateCompleted
 :dateCompleted rdf:type owl:DatatypeProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#description
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#description
 :description rdf:type owl:DatatypeProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#intention
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#intention
 :intention rdf:type owl:DatatypeProperty ;
            rdfs:range :ActualPropertySetKind .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#locationKind
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#locationKind
 :locationKind rdf:type owl:DatatypeProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#locationNamedByAddress
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#locationNamedByAddress
 :locationNamedByAddress rdf:type owl:DatatypeProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#nameOwner
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#nameOwner
 :nameOwner rdf:type owl:DatatypeProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#purpose
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#purpose
 :purpose rdf:type owl:DatatypeProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#recommendations
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#recommendations
 :recommendations rdf:type owl:DatatypeProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#roleKind
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#roleKind
 :roleKind rdf:type owl:DatatypeProperty ;
           rdfs:range :RoleKind .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#serviceType
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#serviceType
 :serviceType rdf:type owl:DatatypeProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#summaryOfFindings
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#summaryOfFindings
 :summaryOfFindings rdf:type owl:DatatypeProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#toBe
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#toBe
 :toBe rdf:type owl:DatatypeProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#toolsUsed
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#toolsUsed
 :toolsUsed rdf:type owl:DatatypeProperty .
 
 
@@ -421,7 +421,7 @@
            rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Activity
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Activity
 :Activity rdf:type owl:Class ;
           rdfs:subClassOf :Desirer ,
                           :UPDMElement ,
@@ -434,7 +434,7 @@
           owl:versionInfo "2.1" .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActivitySubject
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ActivitySubject
 :ActivitySubject rdf:type owl:Class ;
                  rdfs:subClassOf :UPDMElement ,
                                  [ rdf:type owl:Restriction ;
@@ -451,7 +451,7 @@
                  owl:versionInfo "2.1" .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualLocation
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ActualLocation
 :ActualLocation rdf:type owl:Class ;
                 rdfs:subClassOf :UPDMElement ,
                                 [ rdf:type owl:Restriction ;
@@ -516,12 +516,12 @@
                 owl:versionInfo "2.1" .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualMeasurement
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ActualMeasurement
 :ActualMeasurement rdf:type owl:Class ;
                    rdfs:subClassOf :ActualProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualOrganization
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ActualOrganization
 :ActualOrganization rdf:type owl:Class ;
                     rdfs:subClassOf :ActualOrganizationalResource ,
                                     :UPDMElement ,
@@ -573,7 +573,7 @@
                     owl:versionInfo "2.1" .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualOrganizationRole
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ActualOrganizationRole
 :ActualOrganizationRole rdf:type owl:Class ;
                         rdfs:subClassOf :UPDMElement ,
                                         [ rdf:type owl:Restriction ;
@@ -599,19 +599,19 @@
                         owl:versionInfo "2.1" .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualOrganizationalResource
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ActualOrganizationalResource
 :ActualOrganizationalResource rdf:type owl:Class ;
                               rdfs:subClassOf :LocationHolder .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualPerson
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ActualPerson
 :ActualPerson rdf:type owl:Class ;
               rdfs:subClassOf :ActualPost ,
                               :CompetenceProvider ,
                               :LocationHolder .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualPost
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ActualPost
 :ActualPost rdf:type owl:Class ;
             rdfs:subClassOf :ActualOrganizationalResource ,
                             :UPDMElement ,
@@ -638,7 +638,7 @@
             owl:versionInfo "2.1" .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualProject
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ActualProject
 :ActualProject rdf:type owl:Class ;
                rdfs:subClassOf :UPDMElement ,
                                [ rdf:type owl:Restriction ;
@@ -704,7 +704,7 @@
                owl:versionInfo "2.1" .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualProjectMilestone
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ActualProjectMilestone
 :ActualProjectMilestone rdf:type owl:Class ;
                         rdfs:subClassOf :UPDMElement ,
                                         [ rdf:type owl:Restriction ;
@@ -755,7 +755,7 @@
                         owl:versionInfo "2.1" .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualProjectMilestoneRole
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ActualProjectMilestoneRole
 :ActualProjectMilestoneRole rdf:type owl:Class ;
                             rdfs:subClassOf :UPDMElement ,
                                             [ rdf:type owl:Restriction ;
@@ -781,7 +781,7 @@
                             owl:versionInfo "2.1" .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualProperty
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ActualProperty
 :ActualProperty rdf:type owl:Class ;
                 rdfs:subClassOf :UPDMElement ,
                                 [ rdf:type owl:Restriction ;
@@ -836,7 +836,7 @@
                 owl:versionInfo "2.1" .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ActualPropertySet
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ActualPropertySet
 :ActualPropertySet rdf:type owl:Class ;
                    rdfs:subClassOf :UPDMElement ,
                                    [ rdf:type owl:Restriction ;
@@ -873,7 +873,7 @@ ActualMeasurementSet can be “Result,” “Required,” or “Estimate”.""" 
                    owl:versionInfo "2.1" .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Alias
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Alias
 :Alias rdf:type owl:Class ;
        rdfs:subClassOf :UPDMElement ,
                        [ rdf:type owl:Restriction ;
@@ -904,7 +904,7 @@ ActualMeasurementSet can be “Result,” “Required,” or “Estimate”.""" 
        owl:versionInfo "2.1" .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ArchitecturalDescription
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ArchitecturalDescription
 :ArchitecturalDescription rdf:type owl:Class ;
                           rdfs:subClassOf :UPDMElement ,
                                           [ rdf:type owl:Restriction ;
@@ -1018,17 +1018,17 @@ ActualMeasurementSet can be “Result,” “Required,” or “Estimate”.""" 
                           owl:versionInfo "2.1" .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ArchitectureMetadata
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ArchitectureMetadata
 :ArchitectureMetadata rdf:type owl:Class ;
                       rdfs:subClassOf :Metadata .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#AsynchronousMessage
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#AsynchronousMessage
 :AsynchronousMessage rdf:type owl:Class ;
                      rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Capability
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Capability
 :Capability rdf:type owl:Class ;
             rdfs:subClassOf :Desirer ,
                             :PropertySet ,
@@ -1056,137 +1056,137 @@ ActualMeasurementSet can be “Result,” “Required,” or “Estimate”.""" 
             owl:versionInfo "2.1" .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#CapabilityProperty
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#CapabilityProperty
 :CapabilityProperty rdf:type owl:Class ;
                     rdfs:subClassOf :Property .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#CapableElement
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#CapableElement
 :CapableElement rdf:type owl:Class ;
                 rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Climate
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Climate
 :Climate rdf:type owl:Class ;
          rdfs:subClassOf :Environment .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Command
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Command
 :Command rdf:type owl:Class ;
          rdfs:subClassOf :ResourceInteraction .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Competence
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Competence
 :Competence rdf:type owl:Class ;
             rdfs:subClassOf :PropertySet ,
                             :SubjectOfForecast .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#CompetenceProvider
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#CompetenceProvider
 :CompetenceProvider rdf:type owl:Class ;
                     rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#CompetenceRequirer
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#CompetenceRequirer
 :CompetenceRequirer rdf:type owl:Class ;
                     rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ConceptItem
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ConceptItem
 :ConceptItem rdf:type owl:Class ;
              rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ConceptRole
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ConceptRole
 :ConceptRole rdf:type owl:Class ;
              rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ConditionType
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ConditionType
 :ConditionType rdf:type owl:Class ;
                rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#DataModel
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#DataModel
 :DataModel rdf:type owl:Class ;
            rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Definition
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Definition
 :Definition rdf:type owl:Class ;
             rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#DeployedMilestone
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#DeployedMilestone
 :DeployedMilestone rdf:type owl:Class ;
                    rdfs:subClassOf :ActualProjectMilestone ,
                                    :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#DesiredEffect
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#DesiredEffect
 :DesiredEffect rdf:type owl:Class ;
                rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#DesiredState
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#DesiredState
 :DesiredState rdf:type owl:Class ;
               rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Desirer
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Desirer
 :Desirer rdf:type owl:Class ;
          rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#EnduringTask
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#EnduringTask
 :EnduringTask rdf:type owl:Class ;
               rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Energy
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Energy
 :Energy rdf:type owl:Class ;
         rdfs:subClassOf :OperationalExchangeItem .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#EnterpriseGoal
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#EnterpriseGoal
 :EnterpriseGoal rdf:type owl:Class ;
                 rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#EnterprisePhase
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#EnterprisePhase
 :EnterprisePhase rdf:type owl:Class ;
                  rdfs:subClassOf :CapableElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#EnterpriseVision
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#EnterpriseVision
 :EnterpriseVision rdf:type owl:Class ;
                   rdfs:subClassOf :Desirer .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#EntityItem
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#EntityItem
 :EntityItem rdf:type owl:Class ;
             rdfs:subClassOf :ExchangeElement ,
                             :SubjectOfOperationalConstraint .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Environment
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Environment
 :Environment rdf:type owl:Class ;
              rdfs:subClassOf :ConditionType ,
                              :PropertySet .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#EnvironmentProperty
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#EnvironmentProperty
 :EnvironmentProperty rdf:type owl:Class ;
                      rdfs:subClassOf :Property ,
                                      :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Exchange
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Exchange
 :Exchange rdf:type owl:Class ;
           rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ExchangeElement
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ExchangeElement
 :ExchangeElement rdf:type owl:Class ;
                  rdfs:subClassOf :OperationalExchangeItem ,
                                  :ResourceInteractionItem ,
@@ -1194,12 +1194,12 @@ ActualMeasurementSet can be “Result,” “Required,” or “Estimate”.""" 
                                  :SubjectOfResourceConstraint .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ExchangeElementKind
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ExchangeElementKind
 :ExchangeElementKind rdf:type owl:Class ;
                      rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Function
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Function
 :Function rdf:type owl:Class ;
           rdfs:subClassOf :Activity ,
                           [ rdf:type owl:Restriction ;
@@ -1209,235 +1209,235 @@ ActualMeasurementSet can be “Result,” “Required,” or “Estimate”.""" 
                           ] .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#FunctionAction
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#FunctionAction
 :FunctionAction rdf:type owl:Class ;
                 rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#GeoPoliticalExtentType
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#GeoPoliticalExtentType
 :GeoPoliticalExtentType rdf:type owl:Class ;
                         rdfs:subClassOf :OperationalExchangeItem .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#HighLevelOperationalConcept
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#HighLevelOperationalConcept
 :HighLevelOperationalConcept rdf:type owl:Class ;
                              rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ISO8601DateTime
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ISO8601DateTime
 :ISO8601DateTime rdf:type owl:Class ;
                  rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#IncrementMilestone
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#IncrementMilestone
 :IncrementMilestone rdf:type owl:Class ;
                     rdfs:subClassOf :ActualProjectMilestone .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Information
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Information
 :Information rdf:type owl:Class ;
              rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#KnownResource
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#KnownResource
 :KnownResource rdf:type owl:Class ;
                rdfs:subClassOf :NodeRole .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#LightCondition
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#LightCondition
 :LightCondition rdf:type owl:Class ;
                 rdfs:subClassOf :Environment .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Location
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Location
 :Location rdf:type owl:Class ;
           rdfs:subClassOf :ActualLocation .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#LocationHolder
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#LocationHolder
 :LocationHolder rdf:type owl:Class ;
                 rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#LocationType
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#LocationType
 :LocationType rdf:type owl:Class ;
               rdfs:subClassOf :ConceptItem ,
                               :ConditionType .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#LocationTypeKind
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#LocationTypeKind
 :LocationTypeKind rdf:type owl:Class ;
                   rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#LogicalArchitecture
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#LogicalArchitecture
 :LogicalArchitecture rdf:type owl:Class ;
                      rdfs:subClassOf :NodeParent .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#LogicalDataModel
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#LogicalDataModel
 :LogicalDataModel rdf:type owl:Class ;
                   rdfs:subClassOf :DataModel .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Measurement
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Measurement
 :Measurement rdf:type owl:Class ;
              rdfs:subClassOf :Property ,
                              :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#MeasurementSet
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#MeasurementSet
 :MeasurementSet rdf:type owl:Class ;
                 rdfs:subClassOf :PropertySet ,
                                 :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Metadata
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Metadata
 :Metadata rdf:type owl:Class ;
           rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Mission
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Mission
 :Mission rdf:type owl:Class ;
          rdfs:subClassOf :SubjectOfOperationalConstraint ,
                          :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#NeedLine
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#NeedLine
 :NeedLine rdf:type owl:Class ;
           rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#NoLongerUsedMilestone
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#NoLongerUsedMilestone
 :NoLongerUsedMilestone rdf:type owl:Class ;
                        rdfs:subClassOf :ActualProjectMilestone ,
                                        :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Node
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Node
 :Node rdf:type owl:Class ;
       rdfs:subClassOf :ActivitySubject ,
                       :SubjectOfOperationalConstraint ,
                       :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#NodeOperation
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#NodeOperation
 :NodeOperation rdf:type owl:Class ;
                rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#NodeParent
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#NodeParent
 :NodeParent rdf:type owl:Class ;
             rdfs:subClassOf :Participant .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#NodePort
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#NodePort
 :NodePort rdf:type owl:Class ;
           rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#NodeRole
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#NodeRole
 :NodeRole rdf:type owl:Class ;
           rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalActivity
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#OperationalActivity
 :OperationalActivity rdf:type owl:Class ;
                      rdfs:subClassOf :Activity ,
                                      :SubjectOfOperationalConstraint .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalActivityAction
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#OperationalActivityAction
 :OperationalActivityAction rdf:type owl:Class ;
                            rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalActivityEdge
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#OperationalActivityEdge
 :OperationalActivityEdge rdf:type owl:Class ;
                          rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalConstraint
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#OperationalConstraint
 :OperationalConstraint rdf:type owl:Class ;
                        rdfs:subClassOf :Rule .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalEventTrace
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#OperationalEventTrace
 :OperationalEventTrace rdf:type owl:Class ;
                        rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalExchange
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#OperationalExchange
 :OperationalExchange rdf:type owl:Class ;
                      rdfs:subClassOf :Exchange ,
                                      :SubjectOfOperationalConstraint .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalExchangeItem
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#OperationalExchangeItem
 :OperationalExchangeItem rdf:type owl:Class ;
                          rdfs:subClassOf :ActivitySubject ,
                                          :Resource ,
                                          :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalExchangeKind
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#OperationalExchangeKind
 :OperationalExchangeKind rdf:type owl:Class ;
                          rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalMessage
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#OperationalMessage
 :OperationalMessage rdf:type owl:Class ;
                     rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalParameter
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#OperationalParameter
 :OperationalParameter rdf:type owl:Class ;
                       rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalState
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#OperationalState
 :OperationalState rdf:type owl:Class ;
                   rdfs:subClassOf :DesiredState ,
                                   :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OperationalStateDescription
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#OperationalStateDescription
 :OperationalStateDescription rdf:type owl:Class ;
                              rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Organization
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Organization
 :Organization rdf:type owl:Class ;
               rdfs:subClassOf :OrganizationalResource ,
                               :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OrganizationalProjectRelationship
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#OrganizationalProjectRelationship
 :OrganizationalProjectRelationship rdf:type owl:Class ;
                                    rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OrganizationalResource
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#OrganizationalResource
 :OrganizationalResource rdf:type owl:Class ;
                         rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OutOfServiceMilestone
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#OutOfServiceMilestone
 :OutOfServiceMilestone rdf:type owl:Class ;
                        rdfs:subClassOf :ActualProjectMilestone .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Overlap
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Overlap
 :Overlap rdf:type owl:Class ;
          rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#OwnsProcess
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#OwnsProcess
 :OwnsProcess rdf:type owl:Class ;
              rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Participant
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Participant
 :Participant rdf:type owl:Class ;
              rdfs:subClassOf :CapableElement ,
                              :ConceptItem ,
@@ -1445,89 +1445,89 @@ ActualMeasurementSet can be “Result,” “Required,” or “Estimate”.""" 
                              :OperationalExchangeItem .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Person
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Person
 :Person rdf:type owl:Class ;
         rdfs:subClassOf :ActualOrganization .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Post
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Post
 :Post rdf:type owl:Class ;
       rdfs:subClassOf :CompetenceRequirer ,
                       :OrganizationalResource .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ProblemDomain
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ProblemDomain
 :ProblemDomain rdf:type owl:Class ;
                rdfs:subClassOf :NodeRole ,
                                :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ProjectActivity
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ProjectActivity
 :ProjectActivity rdf:type owl:Class ;
                  rdfs:subClassOf :Activity .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ProjectMilestone
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ProjectMilestone
 :ProjectMilestone rdf:type owl:Class ;
                   rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ProjectMilestoneRole
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ProjectMilestoneRole
 :ProjectMilestoneRole rdf:type owl:Class ;
                       rdfs:subClassOf :UPDMElement ;
                       rdfs:comment "An instance of a ProjectMilestoneRole in the context of an ActualProject." ;
                       owl:versionInfo 2.1 .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ProjectOwnership
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ProjectOwnership
 :ProjectOwnership rdf:type owl:Class ;
                   rdfs:subClassOf :OrganizationalProjectRelationship .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ProjectSequence
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ProjectSequence
 :ProjectSequence rdf:type owl:Class ;
                  rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ProjectStatus
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ProjectStatus
 :ProjectStatus rdf:type owl:Class ;
                rdfs:subClassOf :ActualProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ProjectType
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ProjectType
 :ProjectType rdf:type owl:Class ;
              rdfs:subClassOf :Desirer ,
                              :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Property
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Property
 :Property rdf:type owl:Class ;
           rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#PropertySet
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#PropertySet
 :PropertySet rdf:type owl:Class ;
              rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Request
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Request
 :Request rdf:type owl:Class ;
          rdfs:subClassOf :ServicePort ,
                          :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Resource
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Resource
 :Resource rdf:type owl:Class ;
           rdfs:subClassOf :LocationHolder ,
                           :PropertySet .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ResourceConstraint
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ResourceConstraint
 :ResourceConstraint rdf:type owl:Class ;
                     rdfs:subClassOf :Rule .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ResourceEventTrace
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ResourceEventTrace
 :ResourceEventTrace rdf:type owl:Class ;
                     rdfs:subClassOf :UPDMElement ,
                                     [ rdf:type owl:Restriction ;
@@ -1553,18 +1553,18 @@ ActualMeasurementSet can be “Result,” “Required,” or “Estimate”.""" 
                     owl:versionInfo "2.1" .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ResourceInteraction
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ResourceInteraction
 :ResourceInteraction rdf:type owl:Class ;
                      rdfs:subClassOf :Exchange .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ResourceInteractionItem
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ResourceInteractionItem
 :ResourceInteractionItem rdf:type owl:Class ;
                          rdfs:subClassOf :Resource ,
                                          :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ResourceMessage
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ResourceMessage
 :ResourceMessage rdf:type owl:Class ;
                  rdfs:subClassOf :UPDMElement ,
                                  [ rdf:type owl:Restriction ;
@@ -1605,7 +1605,7 @@ ActualMeasurementSet can be “Result,” “Required,” or “Estimate”.""" 
                  owl:versionInfo "2.1" .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ResourceOperation
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ResourceOperation
 :ResourceOperation rdf:type owl:Class ;
                    rdfs:subClassOf :UPDMElement ,
                                    [ rdf:type owl:Restriction ;
@@ -1641,12 +1641,12 @@ ActualMeasurementSet can be “Result,” “Required,” or “Estimate”.""" 
                    owl:versionInfo "2.1" .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ResourceParameter
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ResourceParameter
 :ResourceParameter rdf:type owl:Class ;
                    rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ResourceRole
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ResourceRole
 :ResourceRole rdf:type owl:Class ;
               rdfs:subClassOf :UPDMElement ,
                               [ rdf:type owl:Restriction ;
@@ -1686,201 +1686,201 @@ ActualMeasurementSet can be “Result,” “Required,” or “Estimate”.""" 
               owl:versionInfo "2.1" .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ResourceState
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ResourceState
 :ResourceState rdf:type owl:Class ;
                rdfs:subClassOf :DesiredState .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Responsibility
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Responsibility
 :Responsibility rdf:type owl:Class ;
                 rdfs:subClassOf :CompetenceRequirer ,
                                 :OrganizationalResource .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Rule
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Rule
 :Rule rdf:type owl:Class ;
       rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#RuleKind
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#RuleKind
 :RuleKind rdf:type owl:Class ;
           rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#SameAs
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#SameAs
 :SameAs rdf:type owl:Class ;
         rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#SecurityAttributesGroup
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#SecurityAttributesGroup
 :SecurityAttributesGroup rdf:type owl:Class ;
                          rdfs:subClassOf :PropertySet .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#SecurityDomain
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#SecurityDomain
 :SecurityDomain rdf:type owl:Class ;
                 rdfs:subClassOf :Node .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceAttribute
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ServiceAttribute
 :ServiceAttribute rdf:type owl:Class ;
                   rdfs:subClassOf :Property .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceChannel
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ServiceChannel
 :ServiceChannel rdf:type owl:Class ;
                 rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceDescription
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ServiceDescription
 :ServiceDescription rdf:type owl:Class ;
                     rdfs:subClassOf :ArchitecturalDescription .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceFeature
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ServiceFeature
 :ServiceFeature rdf:type owl:Class ;
                 rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceFunction
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ServiceFunction
 :ServiceFunction rdf:type owl:Class ;
                  rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceFunctionAction
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ServiceFunctionAction
 :ServiceFunctionAction rdf:type owl:Class ;
                        rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceFunctionEdge
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ServiceFunctionEdge
 :ServiceFunctionEdge rdf:type owl:Class ;
                      rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceInterface
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ServiceInterface
 :ServiceInterface rdf:type owl:Class ;
                   rdfs:subClassOf :PropertySet ,
                                   :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceLevelValue
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ServiceLevelValue
 :ServiceLevelValue rdf:type owl:Class ;
                    rdfs:subClassOf :ActualProperty .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceLevelValueSet
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ServiceLevelValueSet
 :ServiceLevelValueSet rdf:type owl:Class ;
                       rdfs:subClassOf :ActualPropertySet .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceMessage
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ServiceMessage
 :ServiceMessage rdf:type owl:Class ;
                 rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceMessageHandler
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ServiceMessageHandler
 :ServiceMessageHandler rdf:type owl:Class ;
                        rdfs:subClassOf :ServiceFeature .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceOperation
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ServiceOperation
 :ServiceOperation rdf:type owl:Class ;
                   rdfs:subClassOf :ServiceFeature .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServicePolicy
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ServicePolicy
 :ServicePolicy rdf:type owl:Class ;
                rdfs:subClassOf :Rule .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServicePort
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ServicePort
 :ServicePort rdf:type owl:Class ;
              rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#ServiceStateMachine
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#ServiceStateMachine
 :ServiceStateMachine rdf:type owl:Class ;
                      rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Standard
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Standard
 :Standard rdf:type owl:Class ;
           rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#StandardOperationalActivity
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#StandardOperationalActivity
 :StandardOperationalActivity rdf:type owl:Class ;
                              rdfs:subClassOf :OperationalActivity .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#StereotypeExtension
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#StereotypeExtension
 :StereotypeExtension rdf:type owl:Class ;
                      rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#StructuralPart
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#StructuralPart
 :StructuralPart rdf:type owl:Class ;
                 rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#SubjectOfForecast
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#SubjectOfForecast
 :SubjectOfForecast rdf:type owl:Class ;
                    rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#SubjectOfOperationalConstraint
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#SubjectOfOperationalConstraint
 :SubjectOfOperationalConstraint rdf:type owl:Class ;
                                 rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#SubjectOfOperationalStateMachine
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#SubjectOfOperationalStateMachine
 :SubjectOfOperationalStateMachine rdf:type owl:Class ;
                                   rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#SubjectOfResourceConstraint
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#SubjectOfResourceConstraint
 :SubjectOfResourceConstraint rdf:type owl:Class ;
                              rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#SysML_Requirement
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#SysML_Requirement
 :SysML_Requirement rdf:type owl:Class .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#SysML_View
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#SysML_View
 :SysML_View rdf:type owl:Class .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#SystemResource
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#SystemResource
 :SystemResource rdf:type owl:Class ;
                 rdfs:subClassOf :OperationalExchangeItem ,
                                 :Participant ,
                                 :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#TemporalPart
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#TemporalPart
 :TemporalPart rdf:type owl:Class ;
               rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#UPDMElement
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#UPDMElement
 :UPDMElement rdf:type owl:Class ;
              rdfs:comment "A relationship between an ActualOrganisation and a Project." ;
              owl:versionInfo 2.1 .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#View
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#View
 :View rdf:type owl:Class ;
       rdfs:subClassOf :SysML_View ,
                       :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#Viewpoint
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#Viewpoint
 :Viewpoint rdf:type owl:Class ;
            rdfs:subClassOf :UPDMElement .
 
 
-###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm/updm.owl#VisionStatement
+###  https://raw.githubusercontent.com/lonniev/ontologies/master/omg/updm#VisionStatement
 :VisionStatement rdf:type owl:Class ;
                  rdfs:subClassOf :UPDMElement .
 
